@@ -1,0 +1,89 @@
+
+
+@import 'reset';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+}
+
+.desktop-menu{
+	width: 100%;
+	padding: 30px auto;
+	display: flex;
+	position: fixed;
+
+	div{
+		flex-direction: row;
+		width: 180px;
+		padding-right: 20px;
+
+		img{
+			padding: 20px 38px;
+		}
+	}
+
+	ul{
+		display: flex;
+		padding-left: 105px;
+
+		li{
+			padding: 40px 30px;
+			white-space: nowrap;
+
+			a{
+				color: #000;
+				text-decoration: none;
+			}
+		}
+	}
+
+}
+
+// mobile menu
+@media screen and (max-width: 768px) {
+	.desktop-menu{
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+
+		div{
+			align-self: center;
+
+			img{
+				padding: 20px 0;
+			}
+		}
+
+		ul{
+			padding-left: 0;
+			justify-content: center;
+
+			li{
+				padding: 20px 20px;
+
+			}
+		}	
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
