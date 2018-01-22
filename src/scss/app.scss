@@ -11,9 +11,10 @@
 
 body {
 	background: #fff;
+	font-family: 'Raleway', sans-serif;
 }
 
-.desktop-menu{
+.menu{
 	width: 100%;
 	padding: 30px auto;
 	display: flex;
@@ -22,7 +23,7 @@ body {
 	div{
 		flex-direction: row;
 		width: 180px;
-		padding-right: 20px;
+		padding: 0 10px;
 
 		img{
 			padding: 20px 38px;
@@ -38,7 +39,8 @@ body {
 			white-space: nowrap;
 
 			a{
-				color: #000;
+				color: #fff;
+				font-weight: 400i;
 				text-decoration: none;
 			}
 		}
@@ -48,26 +50,34 @@ body {
 
 // mobile menu
 @media screen and (max-width: 768px) {
-	.desktop-menu{
+	.menu{
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		position: fixed;
+		background-color: #fff;
+		z-index: 2;
 
 		div{
-			align-self: center;
 
 			img{
-				padding: 20px 0;
+				padding: 9px 0;
+				width: 60%;
 			}
 		}
 
 		ul{
-			padding-left: 0;
+			margin-left: -170px;
+			margin-top: 1px;
 			justify-content: center;
 
 			li{
-				padding: 20px 20px;
+				padding: 18px 11px;
 
+				a{
+					color: #ff95b0;
+					font-size: 15px;
+
+				}
 			}
 		}	
 
@@ -75,6 +85,71 @@ body {
 }
 
 
+//top section
+#top{
+	height: 640px;
+	background-color: #ff95b0;
+
+	.rope{
+		left: 86%;
+		position: absolute;
+		@media screen and (max-width: 768px) {
+			left: 42%;
+
+			img{
+				margin-top: -140px;
+			}
+		}
+		
+		img{
+			top: -300px;
+			width: 82px;	
+		}
+	}
+
+	.character1{
+		left: 40%;
+		top: 60%;
+		position: absolute;
+		@media screen and (max-width: 768px) {
+			left: 40%;
+			top: 75%;
+
+			img{
+				width: 90px;
+			}
+		}
+	}
+
+	.character2{
+		left: 55%;
+		top: 30%;
+		position: absolute;
+		@media screen and (max-width: 768px) {
+			left: 70%;
+			top: 75%;
+
+			img{
+				width: 100px;
+			}
+		}
+	}
+
+	.character3{
+		left: 10%;
+		top: 40%;
+		position: absolute;
+		@media screen and (max-width: 768px) {
+			left: 7%;
+			top: 75%;
+
+			img{
+				width: 90px;
+			}
+		}
+	}
+
+}
 
 
 
