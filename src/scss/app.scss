@@ -14,142 +14,183 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
-.menu{
-	width: 100%;
-	padding: 30px auto;
-	display: flex;
+
+
+// navigation menu----------------------------------
+
+.navBar{
 	position: fixed;
+	min-width: 100%;
 
-	div{
-		flex-direction: row;
-		width: 180px;
-		padding: 0 10px;
-
-		img{
-			padding: 20px 38px;
+	.wrapper{
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 2%;
+	
+		.logo{
+			display: inline-block;
+			height: 45px;
+			margin: 1em 1em;
+			width: 115px;
 		}
 	}
-
-	ul{
-		display: flex;
-		padding-left: 105px;
-
-		li{
-			padding: 40px 30px;
-			white-space: nowrap;
-
-			a{
-				color: #fff;
-				font-weight: 400i;
-				text-decoration: none;
-			}
-		}
-	}
-
 }
 
-// mobile menu
-@media screen and (max-width: 768px) {
-	.menu{
-		display: flex;
-		flex-direction: row;
-		position: fixed;
-		background-color: #fff;
-		z-index: 2;
+/* 3 div lines */
+.burger{
+  	position: absolute;
+  	display: inline-block;
+  	top: 28px;
+  	right: 40px;
+  	width: 29px;
+  	height: 24px;
+  	cursor: pointer;
+  	z-index: 3;
+  
+  	div{
+  		position: absolute;
+  		width: 100%;
+  		height: 20%;
+  		background-color: #fff;
+  		border-radius: 30%;
+  		transition: 0.3s;
 
-		div{
+	 	//2nd bar
+	 	&:nth-child(2) {
+	   		top: 40%;
+	 	}
 
-			img{
-				padding: 9px 0;
-				width: 60%;
-			}
+	 	//3rd bar
+	 	&:nth-child(3) {
+	 	 	top: 80%;
 		}
 
-		ul{
-			margin-left: -170px;
-			margin-top: 1px;
-			justify-content: center;
+		//js click burger to show items and animate the burger to make an x
+		.ul_open &:first-child {
+		    transform: translateY(5px) rotate(-45deg);
+		}
 
-			li{
-				padding: 18px 11px;
+		.ul_open &:nth-child(2) {
+			transform: rotate(-45deg);
+			opacity: 0;
+		}
 
-				a{
-					color: #ff95b0;
-					font-size: 15px;
+		.ul_open &:nth-child(3) {
+			transform: translateY(-13px) rotate(-135deg);
+		}
+  	}
+}
 
-				}
-			}
-		}	
 
+//hide the menu list items and show them on click
+.main-menu-items{
+	display: none;
+
+	li{
+
+		a{
+			color: white;
+			text-decoration: none;
+
+		}
 	}
 }
+
+
+
+
 
 
 //top section
 #top{
+
 	height: 640px;
 	background-color: #ff95b0;
 
+	//mobile rope
 	.rope{
-		left: 86%;
+		width: 277px; //each sheet is 321w
+		height: 277px; //each sheet is 321h
+		background: url(../../dist/img/rope-spritesheet.png);
+		animation: play 3s steps(11) infinite;
+		background-repeat: no-repeat;
 		position: absolute;
-		@media screen and (max-width: 768px) {
-			left: 42%;
+		right: 59px;
 
-			img{
-				margin-top: -140px;
-			}
-		}
-		
-		img{
-			top: -300px;
-			width: 82px;	
+		//desktop rope
+		@media screen and (min-width: 769px) {
+			width: 500px; //each sheet is 500w
+			height: 500px; //each sheet is 500h
+			background: url(../../dist/img/spritesheet-rope-desktop.png);
+			animation: play 3s steps(11) infinite;
+			background-repeat: no-repeat;
+			position: absolute;
 		}
 	}
-
-	.character1{
-		left: 40%;
-		top: 60%;
-		position: absolute;
-		@media screen and (max-width: 768px) {
-			left: 40%;
-			top: 75%;
-
-			img{
-				width: 90px;
-			}
-		}
-	}
-
-	.character2{
-		left: 55%;
-		top: 30%;
-		position: absolute;
-		@media screen and (max-width: 768px) {
-			left: 70%;
-			top: 75%;
-
-			img{
-				width: 100px;
-			}
-		}
-	}
-
-	.character3{
-		left: 10%;
-		top: 40%;
-		position: absolute;
-		@media screen and (max-width: 768px) {
-			left: 7%;
-			top: 75%;
-
-			img{
-				width: 90px;
-			}
-		}
-	}
-
 }
+
+#top{
+
+	//mobile 
+	@keyframes play{
+		100% { background-position: -4000px; } //width of entire spritesheet
+	}
+
+	//desktop 
+	@media screen and (min-width: 769px) {
+		@keyframes play{
+			100% { background-position: -5207px; } 
+		}
+	}
+}
+
+.character1{
+	left: 40%;
+	top: 60%;
+	position: absolute;
+	@media screen and (max-width: 768px) {
+		left: 40%;
+		top: 75%;
+
+		img{
+			width: 90px;
+		}
+	}
+}
+
+.character2{
+	left: 55%;
+	top: 30%;
+	position: absolute;
+	@media screen and (max-width: 768px) {
+		left: 70%;
+		top: 75%;
+
+		img{
+			width: 100px;
+		}
+	}
+}
+
+.character3{
+	left: 10%;
+	top: 40%;
+	position: absolute;
+	@media screen and (max-width: 768px) {
+		left: 7%;
+		top: 75%;
+
+		img{
+			width: 90px;
+		}
+	}
+}
+
+
+
+	
+
+
 
 
 
