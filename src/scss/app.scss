@@ -176,8 +176,6 @@ body {
 
 
 
-
-
 #top{
 
 	//mobile 
@@ -236,7 +234,7 @@ body {
 }
 
 
-//-------section2---------------------------------------
+//-------section2 self esteem---------------------------------------
 
 section#self-esteem{
 	background-color: #d98d33;
@@ -298,6 +296,95 @@ section#self-esteem{
 		}
 	}
 }	
+
+
+//characters pop in from the sides
+#self-esteem{
+
+	.character3{
+		top: 107%;
+		left: 85%;
+
+		img{
+			position: absolute;
+			width: 120px;
+			animation-name: slideIn;
+			animation-duration: -1;
+			background-repeat: no-repeat;
+			animation-duration: 1s;
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
+		}
+		
+	}
+}
+
+// fix this animation
+@keyframes slideIn{
+	0% { left: 0; }
+	100% { left: 100%; opacity: 0; }
+}
+
+
+//-------section3 games---------------------------------------
+
+section#games{
+	background-color: #3da3d8;
+	width: 100%;
+}
+
+
+#games{
+	display: flex;
+	flex-direction: column;
+
+	.lets-play{
+		display: flex;
+		justify-content: center;
+
+		h2{
+			margin: 0 auto;
+			color: #fff;
+			font-size: 30px;
+			padding-top: 130px;
+			padding-bottom: 30px;
+			@media screen and (max-width: 768px) {
+				padding-top: 80px;
+			}
+		}
+	}
+
+	.game-boxes{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		//mobile
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+
+		div {
+			margin: 0 auto;
+			img{
+				margin: 70px auto;
+				padding-bottom: 80px;
+				@media screen and (max-width: 768px) {
+					padding-bottom: 38px;
+					margin: 20px auto;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
 
 
 
