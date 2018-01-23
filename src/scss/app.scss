@@ -21,6 +21,7 @@ body {
 .navBar{
 	position: fixed;
 	min-width: 100%;
+	z-index: 4;
 
 	.wrapper{
 		margin: 0 auto;
@@ -141,6 +142,10 @@ body {
 }
 
 
+//-------top section1---------------------------------------
+
+
+
 
 //top section
 #top{
@@ -231,10 +236,68 @@ body {
 }
 
 
+//-------section2---------------------------------------
 
-	
+section#self-esteem{
+	background-color: #d98d33;
+	width: 100%;
+}
 
 
+#self-esteem{
+	display: flex;	
+	flex-direction: column;
+
+	div{
+		justify-content: center;
+		display: flex;
+	}
+
+	h1{
+		font-weight: 500i;
+		font-size: 1.6em;
+		padding: 60px 0px 20px 0px;
+		color: #fff;
+	}
+
+	p{
+		color: #fff;
+		font-weight: 300;
+		line-height: 23px;
+		width: 686px;
+		justify-content: center;
+		text-align: justify;
+		padding-bottom: 35px;
+
+		//mobile
+		@media screen and (max-width: 768px) {
+			width: 300px;
+			padding: 0px 0px 50px 0px;
+			text-align: justify;
+		}
+	}
+
+	//hide mobile video on desktop
+	.video-mobile{
+		padding-bottom: 55px;
+		img{
+			display: none;
+			// show mobile video on mobile
+			@media screen and (max-width: 768px) {
+				display: flex;
+			}
+		}
+	}
+
+	//hide desktop video on mobile
+	@media screen and (max-width: 768px) {
+		.video-desktop{
+			img{
+				display: none;
+			}
+		}
+	}
+}	
 
 
 
