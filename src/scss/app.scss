@@ -10,10 +10,36 @@
 }
 
 body {
+	// background: 
+	//    url(number.png) 600px 10px no-repeat, 
+	//    url(thingy.png) 10px 10px no-repeat,   
+	//    url(Paper-4.png) ;                      
 	background: #fff;
 	font-family: 'Raleway', sans-serif;
 }
 
+
+.page-wrap{
+	background: //mobile size
+		url(../../dist/img/whitebottom.png), 
+		url(../../dist/img/yellowcharacter.png),
+		url(../../dist/img/blackunderyellowch.png),  
+		url(../../dist/img/orangecharacter.png), 
+		url(../../dist/img/blackunderorangech.png), 
+		url(../../dist/img/pinkcharacter.png), 
+		url(../../dist/img/blackunderpinkch.png), 
+		url(../../dist/img/purplefirstlayerwithwhite.png), 
+		url(../../dist/img/blackunderpurple.png), 
+		url(../../dist/img/pinksecondlayer.png),
+		url(../../dist/img/blackunderpink.png),  
+		url(../../dist/img/yellowthirdlayer.png),
+		url(../../dist/img/blackunderyellow.png),  
+		url(../../dist/img/orangefourthlayer.png),
+		url(../../dist/img/blackunderorange.png), ; //one img will be on top of two img
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 100% auto; 
+	background-position: 0% 43%, 0% 38%, 0% 33.4%, 0% 31%, 0% 27.4%, 0% 24%, 0% 20.9%, 0% 1%, 0% 0.5%, 0% 0.3%, 0% 0%, 0% -1%, 0% 0%, 0% 0%, 0% 0%;
+}
 
 
 // navigation menu----------------------------------
@@ -150,7 +176,7 @@ body {
 //top section
 #top{
 	height: 640px;
-	background-color: #ff95b0;
+
 
 	//mobile rope
 	.rope{
@@ -237,7 +263,6 @@ body {
 //-------section2 self esteem---------------------------------------
 
 section#self-esteem{
-	background-color: #d98d33;
 	width: 100%;
 }
 
@@ -330,7 +355,6 @@ section#self-esteem{
 //-------section3 games---------------------------------------
 
 section#games{
-	background-color: #3da3d8;
 	width: 100%;
 }
 
