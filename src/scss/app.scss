@@ -18,7 +18,6 @@
 }
 
 body {                    
-	background: #fff;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -153,7 +152,6 @@ body {
 
 
 #top{
-	height: 700px;
 	position: relative;
 
 
@@ -194,30 +192,18 @@ body {
 			100% { background-position: -5207px; } 
 		}
 	}
-}
 
-
-.video{
-	top: 54%;
-	left: 18%;
-	position: absolute;
-
-	p{
-		color: #fff;
-		white-space: nowrap;
-		top: -20%;
-		left: 15%;
+	.logo{
 		position: absolute;
-		font-size: 0.7em;
-		font-family: 'funnier', Fallback, sans-serif;
-	}
-
-	img{
-		width: 240px;
+		width: 180px;
+		top: 260px;
+		left: 40px;
 	}
 }
+
 
 .top-bkg-section{
+	height: 702px;
 	background: //mobile size
 		url(../../dist/img/4.svg), 
 		url(../../dist/img/blackunderpurple.png), 
@@ -229,11 +215,68 @@ body {
 		url(../../dist/img/blackunderorange.png); //one img will be on top of two img
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
-	// background-position: 0 0;
 	//                   purple  pblack   pink   pblack  yellow  yblack  orange  oblack
-	background-position: 0 30px, 0 9px, 0 9px, 0 4px, 0 -26px, 0 12px, 0 0, 0 0;
+	background-position: 0 30px, 0 11px, 0 9px, 0 4px, 0 -26px, 0 12px, 0 0, 0 0;
+	//desktop
+	@media screen and (min-width: 522px) {
+		height: 680px;
+		background-position: 0 79px, 0 29px, 0 28px, 0 20px, 0 -75px, 0 16px, 0 0, 0 17px;
+
+	}
+
 }
 
+
+
+//------------video section------------------------------------
+
+
+.video-section{
+	margin-top: -306px;
+	position: relative;
+
+	.video{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		//desktop
+		@media screen and (min-width: 600px){
+			margin-top: 380px;
+			margin-bottom: 83px;
+		}
+
+		p{
+			color: #fff;
+			white-space: nowrap;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			font-size: 0.7em;
+			font-family: 'funnier', Fallback, sans-serif;
+			padding-bottom: 20px;
+
+			//desktop
+			@media screen and (min-width: 600px){
+				color: #460087;
+				font-size: 24px;
+			}
+		}
+
+		img{
+			display: flex;
+			align-self: center;
+			height: 275px;
+			width: 310px;
+
+			//desktop
+			@media screen and (min-width: 600px){
+				height: 320px;
+				width: 600px;
+			}
+		}
+	}
+}
 
 
 //-------section2 self esteem---------------------------------------
@@ -244,70 +287,92 @@ section#self-esteem{
 	position: relative;
 }
 
+
+
 .character1{
-	margin-top: -80px;
+	margin-top: -84px;
 	background: 
 		url(../../dist/img/5.svg), 
 		url(../../dist/img/blackunderpinkch.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
 	background-position: 0 30px, 0 18px;
-	height: 500px;
+	height: 700px;
+	//desktop
+	@media screen and (min-width: 600px) {
+		height: 900px;
+		margin-top: -140px;
+	}
 	img{
-		left: 40%;
-		bottom: 90%;
+		left: 10%;
+		top: 14%;
 		position: absolute;
 		width: 90px;
-		@media screen and (max-width: 768px) {
-			left: 10%;
-			top: 92%;
-			width: 100px;
+		// desktop
+		@media screen and (min-width: 760px) {
+			left: 13%;
+			top: 19%;
+			width: 124px;
+			position: absolute;
 		}
 	}
 }
 
 .character2{
-	margin-top: -380px;
+	margin-top: -577px;
 	background: 
 		url(../../dist/img/6.svg), 
 		url(../../dist/img/blackunderorangech.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
 	background-position: 0 30px, 0 16px;
-	height: 500px;
+	height: 700px;
+	//desktop
+	@media screen and (min-width: 600px) {
+		height: 900px;
+		margin-top: -739px;
+	}
 	img{
-		left: 40%;
-		top: 90%;
+		left: 65%;
+		top: 21%;
 		position: absolute;
 		width: 80px;
-		@media screen and (max-width: 768px) {
-			left: 65%;
-			top: 102%;
-			width: 90px;
+		// desktop
+		@media screen and (min-width: 768px) {
+			left: 72%;
+			top: 23%;
+			width: 120px;
+			position: absolute;
 		}
 	}
 }
 
 .character3{
-	margin-top: -320px;
+	margin-top: -570px;
 	background: 
 		url(../../dist/img/7.svg), 
 		url(../../dist/img/blackunderyellowch.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
 	background-position: 0 40px, 0 30px;
-	height: 500px;
-	position: relative;
+	height: 700px;
+	//desktop
+	@media screen and (min-width: 600px) {
+		height: 900px;
+		margin-top: -690px;
+	}
 
 	img{
-		left: 10%;
-		bottom: 90%;
+		left: 52%;
+		top: 35%;
 		position: absolute;
-		width: 80px;
-		@media screen and (max-width: 768px) {
+		width: 85px;
+		//desktop
+		@media screen and (min-width: 768px) {
 			left: 68%;
-			top: 126%;
-			width: 90px;
+			top: 55%;
+			width: 120px;
+			position: absolute;
 		}
 	}
 }
@@ -316,56 +381,77 @@ section#self-esteem{
 
 //-------section3 games---------------------------------------
 
-// section#games{
-// 	width: 100%;
-// }
+section#games{
+	width: 100%;
+	background: url(../../dist/img/8long.svg);
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-position: 0 30px;
+	padding-bottom: 10px;
+	position: absolute;
+	top: 1012px;
+
+	//desktop
+	@media screen and (min-width: 600px) {
+		top: 1790px;
+		background: url(../../dist/img/8.svg);
+		background-repeat: no-repeat;
+		background-size: 100%; 
+		background-position: 0 30px;
+	}
+}
 
 
-// #games{
-// 	display: flex;
-// 	flex-direction: column;
+#games{
+	display: flex;
+	flex-direction: column;
 
-// 	.lets-play{
-// 		display: flex;
-// 		justify-content: center;
+	.lets-play{
+		display: flex;
+		justify-content: center;
 
-// 		h2{
-// 			margin: 0 auto;
-// 			color: #460087;
-// 			font-family: 'funnier', Fallback, sans-serif;
-// 			font-size: 30px;
-// 			padding-bottom: 30px;
-// 			@media screen and (max-width: 768px) {
-// 				padding-top: 80px;
-// 			}
-// 		}
-// 	}
+		h2{
+			margin: 0 auto;
+			margin-top: 180px;
+			color: #460087;
+			font-family: 'funnier', Fallback, sans-serif;
+			font-size: 30px;
+			padding-bottom: 30px;
+			//mobile
+			@media screen and (max-width: 768px) {
+				padding-top:30px;
+			}
+		}
+	}
 
-// 	.game-boxes{
-// 		display: flex;
-// 		flex-direction: row;
-// 		justify-content: center;
-// 		//mobile
-// 		@media screen and (max-width: 768px) {
-// 			flex-direction: column;
-// 		}
+	.game-circles{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 
-// 		div {
-// 			margin: 0 auto;
+		//mobile
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
 
-// 			img{
-// 				width: 200px;
-// 				margin: 70px auto;
-// 				padding-bottom: 80px;
-// 				@media screen and (max-width: 768px) {
-// 					padding-bottom: 38px;
-// 					margin: 20px auto;
-// 				}
-// 			}
-// 		}
-// 	}
+		div {
+			margin: 0 auto;
 
-// }
+			img{
+				width: 200px;
+				margin: 60px auto;
+				padding-bottom: 30px;
+
+				//mobile
+				@media screen and (max-width: 768px) {
+					padding-bottom: 26px;
+					margin: 10px auto;
+				}
+			}
+		}
+	}
+
+}
 
 
 
