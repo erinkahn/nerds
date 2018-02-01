@@ -159,6 +159,35 @@ body {
 		position: absolute;
 		right: 59px;
 
+		//checkbox - hidden under pull me words
+		input#pullButton{
+			// visibility: hidden;
+			top: 84%;
+			left: 52%;
+			position: absolute;
+			padding: 20px;
+		}
+
+		//hide pull me below 476
+		h1{
+			display: none;
+		}
+
+		// small tablet pull me letters
+		@media screen and (min-width: 476px) {
+			h1{
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				right: 85px;
+				top: 93%;
+				line-height: 1.4em;
+				font-family: 'funnier', Fallback, sans-serif;
+				color: #460087;
+				text-align: center;
+			}
+		}
+
 		//desktop rope
 		@media screen and (min-width: 769px) {
 			width: 500px; //each sheet is 500w
@@ -167,9 +196,25 @@ body {
 			animation: play 3s steps(11) infinite;
 			background-repeat: no-repeat;
 			position: absolute;
+			z-index: 2;
+
+			h1{
+				right: 252px;
+				top: 86%;
+			}
+
+			// hidden checkbox desktop
+			input#pullButton{
+				// visibility: hidden;
+				left: 40%;
+				top: 85%;
+
+			}
 		}
 	}
 }
+
+
 
 
 
@@ -214,7 +259,7 @@ body {
 	//desktop
 	@media screen and (min-width: 522px) {
 		height: 1880px;
-		background-position: 0 79px, 0 29px, 0 28px, 0 20px, 0 -75px, 0 16px, 0 0, 0 17px;
+		background-position: 0 79px, 0 49px, 0 28px, 0 20px, 0 -43px, 0 16px, 0 0, 0 17px;
 	}
 
 }

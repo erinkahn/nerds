@@ -96,9 +96,17 @@ document.querySelector(".character3").addEventListener("click", function() {
 //-----------------------------------------------------------------
 
 
+// submit button when clicked, make nerds fall down
 
 
+var pullMe = document.querySelector("#pullButton").addEventListener("click", function() {
 
+// 	document.body.classList.add("nerdsFall");
+
+
+});
+
+				
 
 
 
