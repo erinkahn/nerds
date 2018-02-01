@@ -29,7 +29,21 @@ document.querySelector(".burger").addEventListener("click", function() {
 document.querySelector(".character1").addEventListener("click", function() {
 
 	document.body.classList.toggle("show_more_pink");
+	var layerText = document.querySelector("#self-esteem .text1 p");
+
+	if (document.body.classList == "show_more_pink" && layerText.style.display == 'none') {
+		layerText.style.display = 'flex';
+	} else {
+		layerText.style.display = 'none';
+	}
+
 	console.log("character 1 was clicked");
+
+	// if this layer is opened, do not open/toggle the others until this is closed ????????
+	// only one toggle at a time
+
+	// when you click the first time it shows no text ???? 
+	// but when you click again it shows text....how do I fix this?????
 });
 
 
@@ -37,7 +51,23 @@ document.querySelector(".character1").addEventListener("click", function() {
 document.querySelector(".character2").addEventListener("click", function() {
 
 	document.body.classList.toggle("show_more_orange");
+	var layerText = document.querySelector("#self-esteem .text2 p");
+
+	if (document.body.classList == "show_more_orange" && layerText.style.display == 'none') {
+		layerText.style.display = 'flex';
+	} else {
+		layerText.style.display = 'none';
+	}
+
+	
 	console.log("character 2 was clicked");
+
+	// if this layer is opened, do not open/toggle the others until this is closed
+	// only one toggle at a time
+
+	// when you click the first time it shows no text ???? 
+	// but when you click again it shows text....how do I fix this?????
+
 });
 
 
@@ -45,7 +75,41 @@ document.querySelector(".character2").addEventListener("click", function() {
 document.querySelector(".character3").addEventListener("click", function() {
 
 	document.body.classList.toggle("show_more_yellow");
+	var layerText = document.querySelector("#self-esteem .text3 p");
+
+	if (document.body.classList == "show_more_yellow" && layerText.style.display == 'none') {
+		layerText.style.display = 'flex';
+	} else {
+		layerText.style.display = 'none';
+	}
+
+
 	console.log("character 3 was clicked");
+
+	// if this layer is opened, do not open/toggle the others until this is closed
+	// only one toggle at a time
+
+	// when you click the first time it shows no text ???? 
+	// but when you click again it shows text....how do I fix this?????
 });
 
 //-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

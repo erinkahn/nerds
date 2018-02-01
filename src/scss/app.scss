@@ -286,6 +286,10 @@ body {
 
 section#self-esteem{
 	position: relative;
+
+	div p{
+		display: none;
+	}
 }
 
 
@@ -305,6 +309,49 @@ section#self-esteem{
 		height: 909px;
 		margin-top: 0px;
 		background-position: 0 6px, 0 -30px;
+	}
+
+	div{
+		display: flex;
+		justify-content: center;
+
+		p{
+			font-size: 15px;
+			color: #fff;
+			padding-top: 243px;
+			margin: 0 30px;
+			line-height: 1.3em;
+			text-align: left;
+
+			// tablet 509
+			@media screen and (min-width: 509px) {
+				padding-top: 270px;
+				margin: 0 70px;
+			}
+
+			// tablet 648
+			@media screen and (min-width: 648px) {
+				padding-top: 220px;
+				margin: 0 60px 0 199px;
+				font-size: 18px;
+			}
+
+			// tablet 768
+			@media screen and (min-width: 768px) {
+				padding-top: 450px;
+				margin: 0 78px;
+				font-size: 24px;
+				line-height: 1.5em;
+			}
+
+			// tablet 1024
+			@media screen and (min-width: 1024px) {
+				padding-top: 350px;
+				margin: 0 180px 0 330px;
+				font-size: 25px;
+				line-height: 1.6em;
+			}
+		}
 	}
 
 	img{
@@ -365,6 +412,56 @@ section#self-esteem{
 		margin-top: -739px;
 		background-position: 0 30px, 0 14px;
 	}
+
+	div{
+		display: flex;
+		justify-content: center;
+
+		p{
+			font-size: 15px;
+			color: #fff;
+			padding-top: 152px;
+			margin: 0 30px;
+			line-height: 1.3em;
+			text-align: left;
+
+			// tablet 466
+			@media screen and (min-width: 466px) {
+				padding-top: 189px;
+				margin: 0 50px;
+			}
+
+			// tablet 566
+			@media screen and (min-width: 566px) {
+				padding-top: 225px;
+				margin: 0 60px;
+			}
+
+			// tablet 700
+			@media screen and (min-width: 700px) {
+				padding-top: 247px;
+				margin: 0 79px;
+				font-size: 18px;
+			}
+
+			// tablet 768
+			@media screen and (min-width: 768px) {
+				padding-top: 400px;
+				margin: 0 80px;
+				font-size: 24px;
+				line-height: 1.5em;
+			}
+
+			// tablet 1024
+			@media screen and (min-width: 1024px) {
+				padding-top: 400px;
+				margin: 0 180px;
+				font-size: 25px;
+				line-height: 1.6em;
+			}
+		}
+	}
+
 	img{
 		left: 64%;
 		top: 19%;
@@ -402,6 +499,49 @@ section#self-esteem{
 		height: 900px;
 		margin-top: -690px;
 		background-position: 0 88px, 0 65px;
+	}
+
+	div{
+		display: flex;
+		justify-content: center;
+
+		p{
+			font-size: 15px;
+			color: #f80368; // change the color
+			padding-top: 220px;
+			margin: 0 30px;
+			line-height: 1.3em;
+			text-align: left;
+
+			// tablet 522
+			@media screen and (min-width: 522px) {
+				padding-top: 305px;
+				margin: 0 50px;
+			}
+
+			// tablet 700
+			@media screen and (min-width: 700px) {
+				padding-top: 367px;
+				margin: 0 60px;
+				font-size: 18px;
+			}
+
+			// tablet 768
+			@media screen and (min-width: 768px) {
+				padding-top: 430px;
+				margin: 0 75px;
+				font-size: 24px;
+				line-height: 1.5em;
+			}
+
+			// tablet 768
+			@media screen and (min-width: 1000px) {
+				padding-top: 480px;
+				margin: 0 130px;
+				font-size: 25px;
+				line-height: 1.5em;
+			}
+		}
 	}
 
 	img{
