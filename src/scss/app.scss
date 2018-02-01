@@ -199,7 +199,7 @@ body {
 .top-bkg-section{
 	height: 702px;
 	background: //mobile size
-		url(../../dist/img/4b.svg), 
+		url(../../dist/img/4.svg), 
 		url(../../dist/img/blackunderpurple.png), 
 		url(../../dist/img/3.svg),
 		url(../../dist/img/blackunderpink.png),  
@@ -297,30 +297,57 @@ section#self-esteem{
 		url(../../dist/img/blackunderpinkch.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
-	background-position: 0 30px, 0 18px;
+	background-position: 0 30px, 0 15px;
 	height: 700px;
 
 	//desktop
 	@media screen and (min-width: 768px) {
-		height: 900px;
+		height: 909px;
 		margin-top: 0px;
+		background-position: 0 6px, 0 -30px;
 	}
 
 	img{
 		left: 10%;
-		top: 14%;
+		top: 12%;
 		position: absolute;
 		width: 90px;
 
-		// desktop
+		// tablet 400
+		@media screen and (min-width: 400px) {
+			top: 14%;
+		}
+
+		// tablet 510
+		@media screen and (min-width: 510px) {
+			top: 17%;
+		}
+
+		// tablet 650
+		@media screen and (min-width: 650px) {
+			top: 20.5%;
+		}
+
+		// tablet 768
 		@media screen and (min-width: 768px) {
 			left: 13%;
-			top: 19%;
+			top: 17%;
 			width: 124px;
 			position: absolute;
 		}
+
+		// desktop
+		@media screen and (min-width: 920px) {
+			top: 20%;
+		}
+
+		// bigger 1107
+		@media screen and (min-width: 1107px) {
+			top: 23%;
+		}
 	}
 }
+
 
 .character2{
 	margin-top: -577px;
@@ -329,24 +356,30 @@ section#self-esteem{
 		url(../../dist/img/blackunderorangech.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
-	background-position: 0 30px, 0 16px;
+	background-position: 0 20px, 0 21px;
 	height: 700px;
 
 	//desktop
 	@media screen and (min-width: 768px) {
-		height: 900px;
+		height: 930px;
 		margin-top: -739px;
+		background-position: 0 30px, 0 14px;
 	}
 	img{
-		left: 65%;
-		top: 21%;
+		left: 64%;
+		top: 19%;
 		position: absolute;
 		width: 80px;
 
+		// tablet 650
+		@media screen and (min-width: 650px) {
+			left: 68%;
+		}
+
 		// desktop
 		@media screen and (min-width: 768px) {
-			left: 72%;
-			top: 23%;
+			left: 67%;
+			top: 18%;
 			width: 120px;
 			position: absolute;
 		}
@@ -360,7 +393,7 @@ section#self-esteem{
 		url(../../dist/img/blackunderyellowch.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
-	background-position: 0 40px, 0 30px;
+	background-position: 0 40px, 0 26px;
 	height: 700px;
 	padding-bottom: 30px;
 
@@ -368,23 +401,229 @@ section#self-esteem{
 	@media screen and (min-width: 768px) {
 		height: 900px;
 		margin-top: -690px;
+		background-position: 0 88px, 0 65px;
 	}
 
 	img{
-		left: 52%;
-		top: 35%;
+		left: 48%;
+		top: 33%;
 		position: absolute;
 		width: 85px;
 
 		//desktop
 		@media screen and (min-width: 768px) {
-			left: 68%;
-			top: 43%;
+			left: 49%;
+			top: 39%;
 			width: 120px;
 			position: absolute;
 		}
 	}
 }
+
+
+
+// TOGGLING THE PINK LAYER SECTION------------------
+
+//when the pink layer is clicked, 
+//move the orange, yellow and white layers down
+.show_more_pink {
+
+	
+	//orange
+	.character2{
+		margin-top: -380px;
+
+		img{
+			top: 34%;
+		}
+	}
+
+	//yellow
+	.character3{
+		margin-top: -547px;
+
+		@media screen and (min-width: 768px) {
+			margin-top: -630px;
+		}
+
+		img{
+			top: 47%;
+
+			@media screen and (min-width: 768px) {
+				top: 56%;
+				left: 50%;
+			}
+		}
+	}
+
+	//white
+	#games{
+		margin-top: 230px;
+
+		@media screen and (min-width: 768px) {
+			margin-top: 430px;
+		}
+	}
+}
+
+
+// TOGGLING THE ORANGE LAYER SECTION------------------
+
+//when the orange layer is clicked, 
+//move the yellow and white layers down
+.show_more_orange {
+
+	//orange charactr
+	@media screen and (min-width: 768px) {
+		.character2 img{
+			top: 16%;
+			left: 67%;
+		}
+	}
+	
+	//pink character
+	.character1 img{
+
+		@media screen and (min-width: 605px) {
+			top: 17%;
+		}
+
+		@media screen and (min-width: 768px) {
+			top: 14%;
+		}
+
+		@media screen and (min-width: 992px) {
+			top: 17%;
+		}
+	}
+
+	//yellow
+	.character3{
+		margin-top: -487px;
+
+		@media screen and (min-width: 400px) {
+			margin-top: -439px;
+		}
+
+		@media screen and (min-width: 522px) {
+			margin-top: -385px;
+		}
+
+		@media screen and (min-width: 700px) {
+			margin-top: -379px;
+		}
+
+		@media screen and (min-width: 1024px) {
+			margin-top: -399px;
+		}
+
+		img{
+			top: 39%;
+
+			@media screen and (min-width: 400px) {
+				top: 43%;
+			}
+
+			@media screen and (min-width: 522px) {
+				left: 49%;
+			}
+
+			@media screen and (min-width: 700px) {
+				top: 48%;
+			}
+
+			@media screen and (min-width: 768px) {
+				top: 52%;
+				left: 50%;
+			}
+		}
+	}
+
+	//white
+	#games{
+		top: 1180px;
+
+		@media screen and (min-width: 400px) {
+			top: 1240px;
+		}
+
+		@media screen and (min-width: 522px) {
+			top: 1530px;
+		}
+
+		@media screen and (min-width: 527px) {
+			top: 1630px;
+		}
+
+		@media screen and (min-width: 700px) {
+			top: 1720px;
+		}
+
+		@media screen and (min-width: 768px) {
+			top: 2250px;
+		}
+
+		@media screen and (min-width: 887px) {
+			top: 2280px;
+		}
+
+		@media screen and (min-width: 1024px) {
+			top: 2330px;
+		}
+
+	}
+
+}
+
+
+
+// TOGGLING THE YELLOW LAYER SECTION------------------
+
+//when the yellow layer is clicked, 
+//move the white layers down
+.show_more_yellow {
+	
+	//pink character
+	.character1 img{
+		top: 14%;
+		@media screen and (min-width: 500px) {
+			top: 17%;
+		}
+	}
+
+	//yellow
+	.character3 img{
+		top: 39%;
+	}
+
+	//white
+	#games{
+		top: 1290px;
+
+		@media screen and (min-width: 522px) {
+			top: 1620px;
+		}
+
+		@media screen and (min-width: 700px) {
+			top: 1720px;
+		}
+
+		@media screen and (min-width: 768px) {
+			top: 2150px;
+		}
+
+		@media screen and (min-width: 887px) {
+			top: 2240px;
+		}
+
+		@media screen and (min-width: 1024px) {
+			top: 2270px;
+		}
+
+	}
+
+}
+
 
 
 
@@ -398,15 +637,16 @@ section#games{
 	background-position: 0 30px;
 	padding: 10px 0;
 	position: absolute;
-	top: 1152px;
+	top: 1120px;
 
 	//tablet
-	@media screen and (min-width: 500px) {
-		top: 1400px;
-		background: url(../../dist/img/8.svg);
-		background-repeat: no-repeat;
-		background-size: 100%; 
-		background-position: 0 30px;
+	@media screen and (min-width: 522px) {
+		top: 1340px;
+	}
+
+	//tablet
+	@media screen and (min-width: 527px) {
+		top: 1460px;
 	}
 
 	//desktop
@@ -416,6 +656,11 @@ section#games{
 		background-repeat: no-repeat;
 		background-size: 100%; 
 		background-position: 0 30px;
+	}
+
+	//bigger
+	@media screen and (min-width: 1024px) {
+		top: 2010px; 
 	}
 }
 
