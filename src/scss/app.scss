@@ -219,32 +219,54 @@ body {
 
 
 .top-text{
+	display: none;
+	font-family: 'funnier', Fallback, sans-serif;
+	color: #fff;
+	font-size: 9px;
+	line-height: 2em;
+	letter-spacing: 0.08em;
 
-	p{
-		display: none;
-		font-family: 'funnier', Fallback, sans-serif;
-		color: #fff;
-		text-align: justify;
-		padding-top: 430px;
-		margin: 0 230px 0 50px;
+	@media screen and (min-width: 500px){
+		display: flex;
+		justify-content: center;
+		padding: 380px 0;
+		margin: 0 129px 0 40px;
+	}
+
+	@media screen and (min-width: 522px){
+		padding: 410px 0;
+		margin: 0 170px 0 40px;
+		line-height: 2.2em;
+		font-size: 10px;
+	}
+
+	@media screen and (min-width: 608px){
+		margin: 0 200px 0 40px;
+		font-size: 11px;
+		line-height: 2.7em;
+	}
+
+	@media screen and (min-width: 608px){
+		margin: 0 230px 0 40px;
 		font-size: 12px;
-		line-height: 2.4em;
-		letter-spacing: 0.08em;
+		line-height: 2.5em;
+	}
 
+	@media screen and (min-width: 768px){
+		padding: 470px 0;
+		margin: 0 280px 0 70px;
+	}
 
-		@media screen and (min-width: 660px){
-			display: flex;
-		}
+	@media screen and (min-width: 880px){
+		padding: 500px 0;
+		margin: 0 350px 0 70px;
+		font-size: 13px;
+	}
 
-		@media screen and (min-width: 768px){
-			display: flex;
-			padding-top: 453px;
-			margin: 0 250px 0 50px;
-			font-size: 15px;
-			letter-spacing: 0.07em;
-			line-height: 2.3em;
-		}
-
+	@media screen and (min-width: 1000px){
+		font-size: 14px;
+		padding: 518px 0;
+		margin: 0 380px 0 70px;
 	}
 }
 
@@ -324,17 +346,42 @@ body {
 
 		p{
 			display: none;
+			text-align: center;			
+			color: #fff;
+			font-family: 'funnier', Fallback, sans-serif;
+
+			@media screen and (min-width: 395px) {
+				display: flex;
+				font-size: 13px;
+				text-align: center;
+				margin: 0 20px 10px 179px;
+				line-height: 2em;
+			}
+
+			@media screen and (min-width: 430px) {
+				display: flex;
+				margin: 0 60px 10px 179px;
+			}
+
+			@media screen and (min-width: 527px) {
+				font-size: 15px;
+				display: flex;
+				margin: 0 58px 10px 182px;
+			}
+
+			@media screen and (min-width: 590px) {
+				white-space: nowrap;
+				display: flex;
+				margin: 0 58px 10px 159px;
+			}
 
 			//desktop
-			@media screen and (min-width: 768px){
+			@media screen and (min-width: 719px){
 				display: flex;
-				font-size: 24px;
-				text-align: center;
-				margin: 0 auto;
-				padding-bottom: 35px;
 				white-space: nowrap;
-				color: #fff;
-				font-family: 'funnier', Fallback, sans-serif;
+				font-size: 24px;
+				margin: 0 auto;	
+				padding-bottom: 35px;			
 			}
 		}
 
@@ -687,7 +734,7 @@ body {
 		color: #460087;
 		font-family: 'funnier', Fallback, sans-serif;
 		font-size: 30px;
-		padding-bottom: 30px;
+		padding-bottom: 80px;
 
 		//mobile
 		@media screen and (max-width: 768px) {
@@ -699,29 +746,70 @@ body {
 
 .game-circles{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
+	padding-bottom: 60px;
 
-	//mobile
-	@media screen and (max-width: 768px) {
-		flex-direction: column;
+	//desktop
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
 	}
 
-	div {
-		margin: 0 auto;
+	div a{
+		text-decoration: none;
 
-		img{
+
+		h1{
+			font-family: 'funnier', Fallback, sans-serif;
+			font-size: 14px;
+			padding: 30px;
+			border-radius: 50%;
 			width: 200px;
-			margin: 60px auto;
-			padding-bottom: 30px;
+			height: 200px;
+			margin: 15px auto;
+			line-height: 2em;
+			text-align: center;
+			color: #fff;
+			padding-top: 70px;
+			letter-spacing: 0.08em;
 
-			//mobile
-			@media screen and (max-width: 768px) {
-				padding-bottom: 26px;
-				margin: 10px auto;
+			//desktop
+			@media screen and (min-width: 768px) {
+				margin: auto 25px;
+			}
+		}
+
+		.matchColors{
+			background-color: #a9388c;
+
+			//show icon on hover and hide text
+			&:hover{
+				color: #a9388c;
+				background: url(../../dist/img/colorgame.svg);
+			}
+		}
+
+		.cleanBeach{
+			background-color: #f80368;
+
+			//show icon on hover and hide text
+			&:hover{
+				color: #f80368;
+				background: url(../../dist/img/beachgame.svg);
+			}
+		}
+
+		.puzzles{
+			background-color: #fc9400;
+
+			//show icon on hover and hide text
+			&:hover{
+				color: #fc9400;
+				background: url(../../dist/img/puzzlegame.svg);
 			}
 		}
 	}
+
 }
 
 
