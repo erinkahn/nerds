@@ -200,17 +200,51 @@ body {
 
 			h1{
 				right: 252px;
-				top: 86%;
+				top: 80%;
 			}
 
 			// hidden checkbox desktop
 			input#pullButton{
 				// visibility: hidden;
 				left: 40%;
-				top: 85%;
+				top: 80%;
 
 			}
 		}
+	}
+}
+
+
+
+
+
+.top-text{
+
+	p{
+		display: none;
+		font-family: 'funnier', Fallback, sans-serif;
+		color: #fff;
+		text-align: justify;
+		padding-top: 430px;
+		margin: 0 230px 0 50px;
+		font-size: 12px;
+		line-height: 2.4em;
+		letter-spacing: 0.08em;
+
+
+		@media screen and (min-width: 660px){
+			display: flex;
+		}
+
+		@media screen and (min-width: 768px){
+			display: flex;
+			padding-top: 453px;
+			margin: 0 250px 0 50px;
+			font-size: 15px;
+			letter-spacing: 0.07em;
+			line-height: 2.3em;
+		}
+
 	}
 }
 
@@ -234,7 +268,6 @@ body {
 
 	.logo{
 		position: absolute;
-		width: 180px;
 		top: 260px;
 		left: 40px;
 	}
@@ -329,577 +362,187 @@ body {
 
 //-------section2 self esteem---------------------------------------
 
-section#self-esteem{
-	position: relative;
-
-	div p{
-		display: none;
-	}
-}
-
-
 
 .character1{
+	position: relative; //IMPORTANT!!!!!!!!
 	margin-top: -84px;
 	background: 
-		url(../../dist/img/5.svg), 
+		url(../../dist/img/5withcharacter.svg), 
 		url(../../dist/img/blackunderpinkch.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
 	background-position: 0 30px, 0 15px;
 	height: 700px;
-
-	//desktop
-	@media screen and (min-width: 768px) {
-		height: 909px;
-		margin-top: 0px;
-		background-position: 0 6px, 0 -30px;
-	}
+	transition: 0.2s;
+	margin-bottom: 0px; // for the start of the transition ( 0 )
 
 	div{
 		display: flex;
 		justify-content: center;
 
 		p{
+			display: none; //hide the text
 			font-size: 15px;
 			color: #fff;
 			padding-top: 243px;
 			margin: 0 30px;
 			line-height: 1.3em;
 			text-align: left;
-
-			// tablet 509
-			@media screen and (min-width: 509px) {
-				padding-top: 270px;
-				margin: 0 70px;
-			}
-
-			// tablet 648
-			@media screen and (min-width: 648px) {
-				padding-top: 220px;
-				margin: 0 60px 0 199px;
-				font-size: 18px;
-			}
-
-			// tablet 768
-			@media screen and (min-width: 768px) {
-				padding-top: 450px;
-				margin: 0 78px;
-				font-size: 24px;
-				line-height: 1.5em;
-			}
-
-			// tablet 1024
-			@media screen and (min-width: 1024px) {
-				padding-top: 350px;
-				margin: 0 180px 0 330px;
-				font-size: 25px;
-				line-height: 1.6em;
-			}
 		}
 	}
 
-	img{
-		left: 10%;
-		top: 12%;
-		position: absolute;
-		width: 90px;
+	&.show{
+		margin-bottom: 300px;
 
-		// tablet 400
-		@media screen and (min-width: 400px) {
-			top: 14%;
-		}
-
-		// tablet 510
-		@media screen and (min-width: 510px) {
-			top: 17%;
-		}
-
-		// tablet 650
-		@media screen and (min-width: 650px) {
-			top: 20.5%;
-		}
-
-		// tablet 768
-		@media screen and (min-width: 768px) {
-			left: 13%;
-			top: 17%;
-			width: 124px;
-			position: absolute;
-		}
-
-		// desktop
-		@media screen and (min-width: 920px) {
-			top: 20%;
-		}
-
-		// bigger 1107
-		@media screen and (min-width: 1107px) {
-			top: 23%;
+		div p{
+			display: flex;
 		}
 	}
+
 }
 
 
 .character2{
+	position: relative;  //IMPORTANT!!!!!!!!
+
 	margin-top: -577px;
 	background: 
-		url(../../dist/img/6.svg), 
+		url(../../dist/img/6withcharacter.svg), 
 		url(../../dist/img/blackunderorangech.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
-	background-position: 0 20px, 0 21px;
+	background-position: 0 20px, 0 14px;
 	height: 700px;
-
-	//desktop
-	@media screen and (min-width: 768px) {
-		height: 930px;
-		margin-top: -739px;
-		background-position: 0 30px, 0 14px;
-	}
 
 	div{
 		display: flex;
 		justify-content: center;
 
 		p{
+			display: none; //hide the text
 			font-size: 15px;
 			color: #fff;
 			padding-top: 152px;
 			margin: 0 30px;
 			line-height: 1.3em;
 			text-align: left;
-
-			// tablet 466
-			@media screen and (min-width: 466px) {
-				padding-top: 189px;
-				margin: 0 50px;
-			}
-
-			// tablet 566
-			@media screen and (min-width: 566px) {
-				padding-top: 225px;
-				margin: 0 60px;
-			}
-
-			// tablet 700
-			@media screen and (min-width: 700px) {
-				padding-top: 247px;
-				margin: 0 79px;
-				font-size: 18px;
-			}
-
-			// tablet 768
-			@media screen and (min-width: 768px) {
-				padding-top: 400px;
-				margin: 0 80px;
-				font-size: 24px;
-				line-height: 1.5em;
-			}
-
-			// tablet 1024
-			@media screen and (min-width: 1024px) {
-				padding-top: 400px;
-				margin: 0 180px;
-				font-size: 25px;
-				line-height: 1.6em;
-			}
 		}
 	}
 
-	img{
-		left: 64%;
-		top: 19%;
-		position: absolute;
-		width: 80px;
+	&.show{
 
-		// tablet 650
-		@media screen and (min-width: 650px) {
-			left: 68%;
-		}
-
-		// desktop
-		@media screen and (min-width: 768px) {
-			left: 67%;
-			top: 18%;
-			width: 120px;
-			position: absolute;
+		div p{
+			display: flex;
 		}
 	}
 }
 
+
+
 .character3{
-	margin-top: -570px;
+	position: relative;  //IMPORTANT!!!!!!!!
+
+	margin-top: -560px;
 	background: 
-		url(../../dist/img/7.svg), 
+		url(../../dist/img/7withcharacter.svg), 
 		url(../../dist/img/blackunderyellowch.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
-	background-position: 0 40px, 0 26px;
+	background-position: 0 40px, 0 33px;
 	height: 700px;
 	padding-bottom: 30px;
-
-	//desktop
-	@media screen and (min-width: 768px) {
-		height: 900px;
-		margin-top: -690px;
-		background-position: 0 88px, 0 65px;
-	}
 
 	div{
 		display: flex;
 		justify-content: center;
 
 		p{
+			display: none; //hide the text
 			font-size: 15px;
-			color: #f80368; // change the color
+			color: #fff; // change the color
 			padding-top: 220px;
 			margin: 0 30px;
 			line-height: 1.3em;
 			text-align: left;
-
-			// tablet 522
-			@media screen and (min-width: 522px) {
-				padding-top: 305px;
-				margin: 0 50px;
-			}
-
-			// tablet 700
-			@media screen and (min-width: 700px) {
-				padding-top: 367px;
-				margin: 0 60px;
-				font-size: 18px;
-			}
-
-			// tablet 768
-			@media screen and (min-width: 768px) {
-				padding-top: 430px;
-				margin: 0 75px;
-				font-size: 24px;
-				line-height: 1.5em;
-			}
-
-			// tablet 768
-			@media screen and (min-width: 1000px) {
-				padding-top: 480px;
-				margin: 0 130px;
-				font-size: 25px;
-				line-height: 1.5em;
-			}
 		}
 	}
 
-	img{
-		left: 48%;
-		top: 33%;
-		position: absolute;
-		width: 85px;
+	&.show{
 
-		//desktop
-		@media screen and (min-width: 768px) {
-			left: 49%;
-			top: 39%;
-			width: 120px;
-			position: absolute;
+		div p{
+			display: flex;
 		}
-	}
-}
-
-
-
-// TOGGLING THE PINK LAYER SECTION------------------
-
-//when the pink layer is clicked, 
-//move the orange, yellow and white layers down
-.show_more_pink {
-
-	
-	//orange
-	.character2{
-		margin-top: -380px;
-
-		img{
-			top: 34%;
-		}
-	}
-
-	//yellow
-	.character3{
-		margin-top: -547px;
-
-		@media screen and (min-width: 768px) {
-			margin-top: -630px;
-		}
-
-		img{
-			top: 47%;
-
-			@media screen and (min-width: 768px) {
-				top: 56%;
-				left: 50%;
-			}
-		}
-	}
-
-	//white
-	#games{
-		margin-top: 230px;
-
-		@media screen and (min-width: 768px) {
-			margin-top: 430px;
-		}
-	}
-}
-
-
-// TOGGLING THE ORANGE LAYER SECTION------------------
-
-//when the orange layer is clicked, 
-//move the yellow and white layers down
-.show_more_orange {
-
-	//orange charactr
-	@media screen and (min-width: 768px) {
-		.character2 img{
-			top: 16%;
-			left: 67%;
-		}
-	}
-	
-	//pink character
-	.character1 img{
-
-		@media screen and (min-width: 605px) {
-			top: 17%;
-		}
-
-		@media screen and (min-width: 768px) {
-			top: 14%;
-		}
-
-		@media screen and (min-width: 992px) {
-			top: 17%;
-		}
-	}
-
-	//yellow
-	.character3{
-		margin-top: -487px;
-
-		@media screen and (min-width: 400px) {
-			margin-top: -439px;
-		}
-
-		@media screen and (min-width: 522px) {
-			margin-top: -385px;
-		}
-
-		@media screen and (min-width: 700px) {
-			margin-top: -379px;
-		}
-
-		@media screen and (min-width: 1024px) {
-			margin-top: -399px;
-		}
-
-		img{
-			top: 39%;
-
-			@media screen and (min-width: 400px) {
-				top: 43%;
-			}
-
-			@media screen and (min-width: 522px) {
-				left: 49%;
-			}
-
-			@media screen and (min-width: 700px) {
-				top: 48%;
-			}
-
-			@media screen and (min-width: 768px) {
-				top: 52%;
-				left: 50%;
-			}
-		}
-	}
-
-	//white
-	#games{
-		top: 1180px;
-
-		@media screen and (min-width: 400px) {
-			top: 1240px;
-		}
-
-		@media screen and (min-width: 522px) {
-			top: 1530px;
-		}
-
-		@media screen and (min-width: 527px) {
-			top: 1630px;
-		}
-
-		@media screen and (min-width: 700px) {
-			top: 1720px;
-		}
-
-		@media screen and (min-width: 768px) {
-			top: 2250px;
-		}
-
-		@media screen and (min-width: 887px) {
-			top: 2280px;
-		}
-
-		@media screen and (min-width: 1024px) {
-			top: 2330px;
-		}
-
 	}
 
 }
 
-
-
-// TOGGLING THE YELLOW LAYER SECTION------------------
-
-//when the yellow layer is clicked, 
-//move the white layers down
-.show_more_yellow {
-	
-	//pink character
-	.character1 img{
-		top: 14%;
-		@media screen and (min-width: 500px) {
-			top: 17%;
-		}
-	}
-
-	//yellow
-	.character3 img{
-		top: 39%;
-	}
-
-	//white
-	#games{
-		top: 1290px;
-
-		@media screen and (min-width: 522px) {
-			top: 1620px;
-		}
-
-		@media screen and (min-width: 700px) {
-			top: 1720px;
-		}
-
-		@media screen and (min-width: 768px) {
-			top: 2150px;
-		}
-
-		@media screen and (min-width: 887px) {
-			top: 2240px;
-		}
-
-		@media screen and (min-width: 1024px) {
-			top: 2270px;
-		}
-
-	}
-
-}
 
 
 
 
 //-------section3 games---------------------------------------
 
-section#games{
+#games{
+	position: relative; //IMPORTANT !!!
+	margin-top: -540px;
+
 	width: 100%;
-	background: url(../../dist/img/8long.svg);
+	background: url(../../dist/img/8.svg);
 	background-repeat: no-repeat;
 	background-size: 100%; 
-	background-position: 0 30px;
+	background-position: 0 40px;
 	padding: 10px 0;
-	position: absolute;
-	top: 1120px;
-
-	//tablet
-	@media screen and (min-width: 522px) {
-		top: 1340px;
-	}
-
-	//tablet
-	@media screen and (min-width: 527px) {
-		top: 1460px;
-	}
-
-	//desktop
-	@media screen and (min-width: 768px) {
-		top: 1940px;
-		background: url(../../dist/img/8.svg);
-		background-repeat: no-repeat;
-		background-size: 100%; 
-		background-position: 0 30px;
-	}
-
-	//bigger
-	@media screen and (min-width: 1024px) {
-		top: 2010px; 
-	}
 }
 
 
-#games{
+.lets-play{
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 
-	.lets-play{
-		display: flex;
-		justify-content: center;
-
-		h2{
-			margin: 0 auto;
-			margin-top: 180px;
-			color: #460087;
-			font-family: 'funnier', Fallback, sans-serif;
-			font-size: 30px;
-			padding-bottom: 30px;
-			//mobile
-			@media screen and (max-width: 768px) {
-				padding-top:30px;
-			}
-		}
-	}
-
-	.game-circles{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
+	h2{
+		margin: 0 auto;
+		margin-top: 180px;
+		color: #460087;
+		font-family: 'funnier', Fallback, sans-serif;
+		font-size: 30px;
+		padding-bottom: 30px;
 
 		//mobile
 		@media screen and (max-width: 768px) {
-			flex-direction: column;
+			padding-top: 30px;
 		}
+	}
+}
 
-		div {
-			margin: 0 auto;
 
-			img{
-				width: 200px;
-				margin: 60px auto;
-				padding-bottom: 30px;
+.game-circles{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 
-				//mobile
-				@media screen and (max-width: 768px) {
-					padding-bottom: 26px;
-					margin: 10px auto;
-				}
+	//mobile
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+
+	div {
+		margin: 0 auto;
+
+		img{
+			width: 200px;
+			margin: 60px auto;
+			padding-bottom: 30px;
+
+			//mobile
+			@media screen and (max-width: 768px) {
+				padding-bottom: 26px;
+				margin: 10px auto;
 			}
 		}
 	}
-
 }
+
+
 
 
 

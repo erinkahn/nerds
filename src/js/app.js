@@ -23,75 +23,30 @@ document.querySelector(".burger").addEventListener("click", function() {
 
 
 // toggle CHARACTER layer section----------------------------------------------
+var toggleCharacters = function() {
+	console.log("character 2 was clicked");
+	
+	// if the one i clicked does not contain the class show, switch to another tab
+	if (this.classList.contains("show") === false) {
 
+		// remove show from all
+		document.querySelector(".character1").classList.remove("show");
+		document.querySelector(".character2").classList.remove("show");
+		document.querySelector(".character3").classList.remove("show");
+
+	};
+
+	// whatever was clicked, add show
+	this.classList.toggle("show"); 
+}
 
 // pink click
-document.querySelector(".character1").addEventListener("click", function() {
-
-	document.body.classList.toggle("show_more_pink");
-	var layerText = document.querySelector("#self-esteem .text1 p");
-
-	if (document.body.classList == "show_more_pink" && layerText.style.display == 'none') {
-		layerText.style.display = 'flex';
-	} else {
-		layerText.style.display = 'none';
-	}
-
-	console.log("character 1 was clicked");
-
-	// if this layer is opened, do not open/toggle the others until this is closed ????????
-	// only one toggle at a time
-
-	// when you click the first time it shows no text ???? 
-	// but when you click again it shows text....how do I fix this?????
-});
+document.querySelector(".character1").addEventListener("click", toggleCharacters);
+document.querySelector(".character2").addEventListener("click", toggleCharacters);
+document.querySelector(".character3").addEventListener("click", toggleCharacters);
 
 
-//orange click
-document.querySelector(".character2").addEventListener("click", function() {
 
-	document.body.classList.toggle("show_more_orange");
-	var layerText = document.querySelector("#self-esteem .text2 p");
-
-	if (document.body.classList == "show_more_orange" && layerText.style.display == 'none') {
-		layerText.style.display = 'flex';
-	} else {
-		layerText.style.display = 'none';
-	}
-
-	
-	console.log("character 2 was clicked");
-
-	// if this layer is opened, do not open/toggle the others until this is closed
-	// only one toggle at a time
-
-	// when you click the first time it shows no text ???? 
-	// but when you click again it shows text....how do I fix this?????
-
-});
-
-
-//yellow click
-document.querySelector(".character3").addEventListener("click", function() {
-
-	document.body.classList.toggle("show_more_yellow");
-	var layerText = document.querySelector("#self-esteem .text3 p");
-
-	if (document.body.classList == "show_more_yellow" && layerText.style.display == 'none') {
-		layerText.style.display = 'flex';
-	} else {
-		layerText.style.display = 'none';
-	}
-
-
-	console.log("character 3 was clicked");
-
-	// if this layer is opened, do not open/toggle the others until this is closed
-	// only one toggle at a time
-
-	// when you click the first time it shows no text ???? 
-	// but when you click again it shows text....how do I fix this?????
-});
 
 //-----------------------------------------------------------------
 
@@ -99,12 +54,13 @@ document.querySelector(".character3").addEventListener("click", function() {
 // submit button when clicked, make nerds fall down
 
 
-var pullMe = document.querySelector("#pullButton").addEventListener("click", function() {
+let pullButton = document.querySelector("#pullButton");
 
-// 	document.body.classList.add("nerdsFall");
+pullButton.onclick = function() {
 
+	document.body.classList.add("nerdsFall");
 
-});
+}
 
 				
 
