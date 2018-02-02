@@ -23,6 +23,8 @@ document.querySelector(".burger").addEventListener("click", function() {
 
 
 // toggle CHARACTER layer section----------------------------------------------
+
+
 var toggleCharacters = function() {
 	console.log("character 2 was clicked");
 	
