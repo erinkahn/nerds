@@ -217,7 +217,7 @@ body {
 
 
 
-
+// position text under nerds logo at diff media points
 .top-text{
 	display: none;
 	font-family: 'funnier', Fallback, sans-serif;
@@ -267,6 +267,15 @@ body {
 		font-size: 14px;
 		padding: 518px 0;
 		margin: 0 380px 0 70px;
+	}
+
+	@media screen and (min-width: 1114px){
+		padding: 539px 0;
+		margin: 0 400px 0 70px;
+	}
+
+	@media screen and (min-width: 1200px){
+		display: none;
 	}
 }
 
@@ -354,7 +363,7 @@ body {
 				display: flex;
 				font-size: 13px;
 				text-align: center;
-				margin: 0 20px 10px 179px;
+				margin: -5px 20px 5px 179px;
 				line-height: 2em;
 			}
 
