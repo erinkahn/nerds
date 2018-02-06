@@ -222,32 +222,44 @@ body {
 //top characters
 
 .top-characters{
-
-	//messing up my rope
 	position: relative;
+	height: 100%;
+	width: 100%;
 
-	img{
-		position: absolute;
-		
-	}
-
-	.gizmo{
-		width: 13%;
-		top: 30%;
-		left: 38%;
-		transform: rotate(35deg);
-	}
-
-	.fidget{
-		width: 17%;
-		top: 30%;
-		left: 68%;
-	}
 
 	.whimsy{
 		
+		img{
+			position: absolute;
+			width: 13%;
+			margin-top: 34%;
+			left: 79%;
+		}
 	}
-	
+
+	.fidget{
+		
+		img{
+			position: absolute;			
+			width: 18%;
+			margin-top: 70%;
+			left: 82%;
+		}
+	}
+
+	.gizmo{
+
+		img{
+			position: absolute;
+			width: 13%;
+			top: 30%;
+			left: 38%;
+			transform: rotate(35deg);
+		}
+
+	}
+
+		
 }
 
 
@@ -273,7 +285,7 @@ body {
 
 	img {
 		position: absolute;
-		top: -25px;
+		top: -55px;
 		// transform: translateY(-25px);
 	}
 
