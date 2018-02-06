@@ -65,7 +65,7 @@ ropeAnimation.addEventListener("click", function(){
 		y: 0, //from
 	}, {
 		ease: Power1.easeIn, //start slow then speed up
-		y: document.body.offsetHeight //to the size of the window
+		y: document.body.offsetHeight + 20//to the size of the window
 	}, 0.1)
 
 
