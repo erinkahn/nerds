@@ -1,14 +1,13 @@
 
-(() => {
-	console.log("Hello World from app.js, transpiled and concatenated!");
-})();
 
 // hamburger menu   ------------------------------------------------------
 
 // when the user clicks the hamburger button
 document.querySelector(".burger").addEventListener("click", function() {
+	
 	// it makes the nav visible and the hamburger change by adding a class to the body
 	document.body.classList.toggle("ul_open");
+	
 	// show the menu items when you click
 
 	if (document.querySelector('.main-menu-items').style.display == 'block') {
@@ -56,20 +55,23 @@ document.querySelector(".character3").addEventListener("click", toggleCharacters
 // submit button when clicked, make nerds fall down
 
 
-let pullButton = document.querySelector("#pullButton");
+let ropeAnimation = document.querySelector(".rope");
 
-pullButton.onclick = function() {
 
-	document.body.classList.add("nerdsFall");
+ropeAnimation.addEventListener("click", function(){
 
-}
+
+	TweenMax.staggerFromTo([".yellownerd", ".purplenerd", ".orangenerd", ".greennerd", ".greennerd2", ".pinknerd", ".pinknerd2"], 2, {
+		y: 0, //from
+	}, {
+		ease: Power1.easeIn, //start slow then speed up
+		y: document.body.offsetHeight //to the size of the window
+	}, 0.1)
+
+
+});
 
 				
-
-
-
-
-
 
 
 

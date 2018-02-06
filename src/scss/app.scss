@@ -18,6 +18,7 @@
 }
 
 body {                    
+	height: 100%;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -55,6 +56,7 @@ body {
   		background-color: #460087;
   		border-radius: 30%;
   		transition: 0.3s;
+
 
 	 	//2nd bar
 	 	&:nth-child(2) {
@@ -158,14 +160,13 @@ body {
 		background-repeat: no-repeat;
 		position: absolute;
 		right: 59px;
+		margin-top: -20px;
+		transition: 0.2s;
 
-		//checkbox - hidden under pull me words
-		input#pullButton{
-			// visibility: hidden;
-			top: 84%;
-			left: 52%;
-			position: absolute;
-			padding: 20px;
+		&:hover{
+			 animation-play-state: paused;
+			 transform: translateY(20px);
+			 cursor: pointer;
 		}
 
 		//hide pull me below 476
@@ -197,6 +198,7 @@ body {
 			background-repeat: no-repeat;
 			position: absolute;
 			z-index: 2;
+			margin-top: -20px;
 
 			h1{
 				right: 252px;
@@ -212,9 +214,115 @@ body {
 			}
 		}
 	}
+
 }
 
 
+
+//top characters
+
+.top-characters{
+
+	//messing up my rope
+	position: relative;
+
+	img{
+		position: absolute;
+		
+	}
+
+	.gizmo{
+		width: 13%;
+		top: 30%;
+		left: 38%;
+		transform: rotate(35deg);
+	}
+
+	.fidget{
+		width: 17%;
+		top: 30%;
+		left: 68%;
+	}
+
+	.whimsy{
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+//nerd falling animation
+
+.nerdsFall{
+	// relative or absolute on the container????
+	// position: absolute;
+	position: relative;
+	width: 100%;
+	// height: 100%;
+	z-index: 4;
+	pointer-events: none;
+
+	img {
+		position: absolute;
+		top: -25px;
+		// transform: translateY(-25px);
+	}
+
+	.pinknerd{
+		width: 4%;
+		
+		left: 32%;
+	}
+
+	.pinknerd2{
+		width: 4%;
+		
+		left: 64%;
+		transform: rotate(95deg);
+	}
+
+	.greennerd{
+		width: 6%;
+		
+		left: 3%;
+	}
+
+	.greennerd2{
+		width: 5%;
+		
+		left: 92%;
+		transform: rotate(20deg);
+	}
+
+	.orangenerd{
+		width: 4%;
+		
+		left: 82%;
+	}
+
+	.purplenerd{
+		width: 4%;
+		
+		left: 79%;
+	}
+
+	.yellownerd{
+		width: 4%;
+		// top: 129%;
+		
+		left: 17%;
+	}
+
+}
 
 
 // position text under nerds logo at diff media points
@@ -226,35 +334,30 @@ body {
 	line-height: 2em;
 	letter-spacing: 0.08em;
 
-	@media screen and (min-width: 500px){
-		display: flex;
-		justify-content: center;
-		padding: 380px 0;
-		margin: 0 129px 0 40px;
-	}
-
 	@media screen and (min-width: 522px){
-		padding: 410px 0;
-		margin: 0 170px 0 40px;
-		line-height: 2.2em;
+		display: flex;
+		padding: 400px 0;
+		margin: 0 155px 0 40px;
+		line-height: 2.3em;
 		font-size: 10px;
 	}
 
 	@media screen and (min-width: 608px){
-		margin: 0 200px 0 40px;
+		margin: 0 169px 0 40px;
 		font-size: 11px;
 		line-height: 2.7em;
 	}
 
-	@media screen and (min-width: 608px){
+	@media screen and (min-width: 620px){
 		margin: 0 230px 0 40px;
-		font-size: 12px;
-		line-height: 2.5em;
+		font-size: 11px;
+		line-height: 2.7em;
 	}
 
 	@media screen and (min-width: 768px){
 		padding: 470px 0;
 		margin: 0 280px 0 70px;
+		font-size: 12px;
 	}
 
 	@media screen and (min-width: 880px){
@@ -275,7 +378,14 @@ body {
 	}
 
 	@media screen and (min-width: 1200px){
-		display: none;
+		font-size: 11px;
+		padding: 830px 0;
+		margin: 0 920px 0 50px;
+	}
+
+	@media screen and (min-width: 1230px){
+		font-size: 11.4px;
+		margin: 0 960px 0 50px;
 	}
 }
 
@@ -359,7 +469,7 @@ body {
 			color: #fff;
 			font-family: 'funnier', Fallback, sans-serif;
 
-			@media screen and (min-width: 395px) {
+			@media screen and (min-width: 402px) {
 				display: flex;
 				font-size: 13px;
 				text-align: center;
@@ -484,6 +594,7 @@ body {
 				font-size: 17px;
 				line-height: 2.5em;
 			}
+
 			//push down the pink layer text and add margin
 			@media screen and (min-width: 911px) {
 				padding-top: 390px;
@@ -743,7 +854,7 @@ body {
 		color: #460087;
 		font-family: 'funnier', Fallback, sans-serif;
 		font-size: 30px;
-		padding-bottom: 80px;
+		padding-bottom: 60px;
 
 		//mobile
 		@media screen and (max-width: 768px) {
