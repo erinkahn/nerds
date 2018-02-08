@@ -219,7 +219,7 @@ body {
 
 
 
-//top characters
+//top characters gifs
 
 .top-characters{
 	position: relative;
@@ -275,8 +275,7 @@ body {
 //nerd falling animation
 
 .nerdsFall{
-	// relative or absolute on the container????
-	// position: absolute;
+
 	position: relative;
 	width: 100%;
 	// height: 100%;
@@ -291,46 +290,38 @@ body {
 
 	.pinknerd{
 		width: 4%;
-		
 		left: 32%;
 	}
 
 	.pinknerd2{
 		width: 4%;
-		
 		left: 64%;
 		transform: rotate(95deg);
 	}
 
 	.greennerd{
 		width: 6%;
-		
 		left: 3%;
 	}
 
 	.greennerd2{
 		width: 5%;
-		
 		left: 92%;
 		transform: rotate(20deg);
 	}
 
 	.orangenerd{
 		width: 4%;
-		
 		left: 82%;
 	}
 
 	.purplenerd{
 		width: 4%;
-		
 		left: 79%;
 	}
 
 	.yellownerd{
 		width: 4%;
-		// top: 129%;
-		
 		left: 17%;
 	}
 
@@ -553,17 +544,26 @@ body {
 	height: 700px; //background images must have a set height
 	transition: 0.2s; //REally cool! use this more
 	margin-bottom: 0px; // for the start of the transition ( 0 )
-
+	
+	//make the pink layer thicker
+	//so you dont cover the character img
 	@media screen and (min-width: 520px) {
 		height: 740px;
 	}
-
+	//make the pink layer thicker
+	//so you dont cover the character img
 	@media screen and(min-width: 678px) {
 		height: 820px;
 	}
-
+	//make the pink layer thicker
+	//so you dont cover the character img
 	@media screen and(min-width: 1000px) {
-		height: 920px;
+		height: 930px;
+	}
+	//make the pink layer thicker
+	//so you dont cover the character img
+	@media screen and(min-width: 1170px) {
+		height: 980px;
 	}
 
 	div{
@@ -606,7 +606,13 @@ body {
 				font-size: 17px;
 				line-height: 2.5em;
 			}
-
+			//push down the pink layer text and add margin
+			@media screen and (min-width: 834px) {
+				padding-top: 350px;
+				margin: 0 400px 0 65px;
+				font-size: 18px;
+				line-height: 2.5em;
+			}
 			//push down the pink layer text and add margin
 			@media screen and (min-width: 911px) {
 				padding-top: 390px;
@@ -617,6 +623,11 @@ body {
 				padding-top: 410px;
 				margin: 0 540px 0 65px;
 				font-size: 20px;
+			}
+			//push down the pink layer text and add margin
+			@media screen and (min-width: 1220px) {
+				padding-top: 460px;
+				margin: 0 670px 0 65px;
 			}
 		}
 	}
@@ -646,21 +657,51 @@ body {
 	transition: 0.2s; //REally cool! use this more
 	margin-bottom: 0px; // for the start of the transition ( 0 )
 
+	//make the orange layer thicker
+	//so you dont cover the character img
 	@media screen and(min-width: 570px) {
 		height: 700px;
 	}
-
+	//make the orange layer thicker
+	//so you dont cover the character img
 	@media screen and(min-width: 678px) {
 		height: 820px;
 		background-position: 0 20px, 0 40px;
 	}
-
+	//cover the white under pink
+	@media screen and(min-width: 834px) {
+		margin-top: -600px;
+		height: 835px;
+	}
+	//make the orange layer thicker
+	//so you dont cover the character img
 	@media screen and(min-width: 865px) {
 		height: 880px;
 	}
-
+	//cover the white under pink
+	@media screen and(min-width: 933px) {
+		margin-top: -630px;
+		height: 890px;
+	}
+	//make the orange layer thicker
+	//so you dont cover the character img
 	@media screen and(min-width: 1000px) {
-		height: 920px;
+		height: 930px;
+		margin-top: -650px;
+	}
+	//make the orange layer thicker
+	@media screen and(min-width: 1114px) {
+		height: 955px;
+	}
+	//cover the white under pink
+	@media screen and(min-width: 1176px) {
+		margin-top: -700px;
+		height: 970px;
+	}
+	//cover the white under pink
+	@media screen and(min-width: 1200px) {
+		height: 1030px;
+		margin-top: -704px;
 	}
 
 	div{
@@ -690,48 +731,84 @@ body {
 			}
 
 			//push down the orange layer text and add margin
+			@media screen and (min-width: 445px) {
+				padding-top: 200px;
+				margin: 0 30px 0 160px;
+			}
+
+			//push down the orange layer text and add margin
 			@media screen and (min-width: 460px) {
 				padding-top: 200px;
 				margin: 0 30px 0 180px;
 			}
 
 			//push down the orange layer text and add margin
-			@media screen and (min-width: 580px) {
+			@media screen and (min-width: 540px) {
 				padding-top: 250px;
-				margin: 0 30px 0 240px;
-			}
-
-			@media screen and(min-width: 678px) {
-				font-size: 14px;
-				padding-top: 330px;
+				margin: 0 30px 0 200px;
 			}
 
 			//push down the orange layer text and add margin
-			@media screen and (min-width: 740px) {
-				padding-top: 338px;
-				margin: 0 30px 0 260px;
+			@media screen and(min-width: 637px) {
+				font-size: 14px;
+				padding-top: 248px;
+				margin: 0 30px 0 220px;
+			}
+
+			//push down the orange layer text and add margin
+			@media screen and(min-width: 683px) {
+				font-size: 14px;
+				padding-top: 290px;
+				margin: 0 60px 0 270px;
+			}
+
+			//push down the orange layer text and add margin
+			@media screen and (min-width: 785px) {
+				padding-top: 308px;
+				margin: 0 70px 0 299px;
 				font-size: 16px;
 			}
 
 			//push down the orange layer text and add margin
-			@media screen and (min-width: 830px) {
-				padding-top: 345px;
-				margin: 0 30px 0 300px;
-			}
-
-			//push down the orange layer text and add margin
 			@media screen and (min-width: 896px) {
-				padding-top: 330px;
-				margin: 0 30px 0 435px;
+				padding-top: 250px;
+				margin: 0 40px 0 455px;
 				font-size: 17px;
 			}
 
+			//push down the orange layer text and add margin
+			@media screen and (min-width: 971px) {
+				padding-top: 275px;
+			}
 
 			//push down the orange layer text and add margin
 			@media screen and (min-width: 1000px) {
-				padding-top: 300px;
+				padding-top: 269px;
 				margin: 0 30px 0 475px;
-				font-size: 20px;
+				font-size: 19px;
+			}
+
+			//push down the orange layer text and add margin
+			@media screen and (min-width: 1100px) {
+				padding-top: 307px;
+				margin: 0 42px 0 475px;
+			}
+
+			//push down the orange layer text and add margin
+			@media screen and (min-width: 1150px) {
+				padding-top: 347px;
+				margin: 0 42px 0 489px;
+			}
+
+			//push down the orange layer text and add margin
+			@media screen and (min-width: 1207px) {
+				padding-top: 250px;
+				margin: 0 67px 0 675px;
+			}
+
+			//push down the orange layer text and add margin
+			@media screen and (min-width: 1300px) {
+				padding-top: 320px;
 			}
 
 		}
@@ -763,16 +840,56 @@ body {
 	transition: 0.2s; //REally cool! use this more
 	margin-bottom: 0px; // for the start of the transition ( 0 )
 
+	//make the yellow thicker to not hide
+	//the character or name
 	@media screen and (min-width: 520px) {
 		height: 740px;
 	}
-
+	//make the yellow thicker to not hide
+	//the character or name
 	@media screen and(min-width: 678px) {
 		height: 820px;
 	}
-
+	//cover the white under orange layer
+	@media screen and(min-width: 730px) {
+		margin-top: -580px;
+	}
+	//cover the white under orange layer
+	@media screen and(min-width: 795px) {
+		margin-top: -600px;
+	}
+	//cover the white under orange layer
+	@media screen and(min-width: 857px) {
+		margin-top: -600px;
+	}
+	//cover the white under orange layer
+	@media screen and(min-width: 857px) {
+		margin-top: -630px;
+	}
+	//cover the white under orange layer
+	@media screen and(min-width: 956px) {
+		margin-top: -660px;
+	}
+	//make the yellow thicker to not hide
+	//the character or name
 	@media screen and(min-width: 1000px) {
 		height: 920px;
+	}
+	//cover the white under orange layer
+	@media screen and(min-width: 1074px) {
+		margin-top: -690px;
+	}
+	//cover the white under orange layer
+	@media screen and(min-width: 1174px) {
+		margin-top: -697px;
+	}
+	//cover the white under orange layer
+	@media screen and(min-width: 1200px) {
+		margin-top: -700px;
+	}
+	//cover the white under orange layer
+	@media screen and(min-width: 1210px) {
+		margin-top: -725px;
 	}
 
 	div{
@@ -790,21 +907,25 @@ body {
 			letter-spacing: 0.09em;
 			font-family: 'funnier', Fallback, sans-serif;
 
+			//adjust the text position and margin
 			@media screen and (min-width: 433px) {
 				padding-top: 250px;
 			}
 
+			//adjust the text position and margin
 			@media screen and (min-width: 567px) {
 				padding-top: 320px;
 				margin: 0 60px;
 				font-size: 14px;
 			}
 
+			//adjust the text position and margin
 			@media screen and (min-width: 678px) {
 				font-size: 15px;
 				padding-top: 330px;
 			}
 
+			//adjust the text position and margin
 			@media screen and (min-width: 800px) {
 				padding-top: 388px;
 				margin: 0 80px;
@@ -812,17 +933,32 @@ body {
 				line-height: 2.3em;
 			}
 
+			//adjust the text position and margin
 			@media screen and (min-width: 950px) {
 				padding-top: 408px;
 				margin: 0 177px;
 				font-size: 17px;
 			}
 
+			//adjust the text position and margin
 			@media screen and (min-width: 1000px) {
 				padding-top: 438px;
 				margin: 0 180px;
 				font-size: 20px;
-				line-height: 2.5em;
+				line-height: 2.3em;
+			}
+
+			//adjust the text position and margin
+			@media screen and (min-width: 1224px) {
+				padding-top: 458px;
+				margin: 0 200px;
+				line-height: 2.4em;
+			}
+
+			//adjust the text position and margin
+			@media screen and (min-width: 1280px) {
+				padding-top: 489px;
+
 			}
 		}
 	}
