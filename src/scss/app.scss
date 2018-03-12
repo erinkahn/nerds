@@ -284,7 +284,7 @@ body {
 
 	img {
 		position: absolute;
-		top: -55px;
+		top: -74px;
 		// transform: translateY(-25px);
 	}
 
@@ -387,8 +387,21 @@ body {
 	}
 
 	@media screen and (min-width: 1230px){
-		font-size: 11.4px;
-		margin: 0 960px 0 50px;
+		font-size: 12px;
+		margin: 0 960px 0 55px;
+	}
+
+	@media screen and (min-width: 1350px){
+		margin: 0 1040px 0 65px;
+		font-size: 13px;
+	}
+	@media screen and (min-width: 1460px){
+		margin: 0 1080px 0 65px;
+		font-size: 14px;
+	}
+	@media screen and (min-width: 1630px){
+		margin: 0 1240px 0 65px;
+		font-size: 14.3px;
 	}
 }
 
@@ -523,6 +536,7 @@ body {
 			@media screen and (min-width: 768px){
 				height: 360px;
 				width: 550px;
+
 			}
 		}
 	}
