@@ -35,11 +35,11 @@ var toggleCharacters = function() {
 		document.querySelector(".character2").classList.remove("show");
 		document.querySelector(".character3").classList.remove("show");
 
-	};
+	}
 
 	// whatever was clicked, add show
 	this.classList.toggle("show"); 
-}
+};
 
 // pink click
 document.querySelector(".character1").addEventListener("click", toggleCharacters);
@@ -66,7 +66,7 @@ ropeAnimation.addEventListener("click", function(){
 	}, {
 		ease: Power1.easeIn, //start slow then speed up
 		y: document.body.offsetHeight + 20//to the size of the window
-	}, 0.1)
+	}, 0.1);
 
 
 });
