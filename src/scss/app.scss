@@ -284,7 +284,7 @@ body {
 
 	img {
 		position: absolute;
-		top: -74px;
+		top: -94px;
 		// transform: translateY(-25px);
 	}
 
@@ -399,10 +399,29 @@ body {
 		margin: 0 1080px 0 65px;
 		font-size: 14px;
 	}
-	@media screen and (min-width: 1630px){
-		margin: 0 1240px 0 65px;
+	@media screen and (min-width: 1584px){
+		margin: 0 1109px 0 65px;
+		font-size: 14px;
+	}
+	@media screen and (min-width: 1600px){
+		margin: 0 1109px 0 65px;
 		font-size: 14.3px;
 	}
+	@media screen and (min-width: 1683px){
+		margin: 20px 1200px 0 65px;
+		font-size: 15px;
+	}
+	@media screen and (min-width: 1700px){
+		margin: 0px 1290px 0 90px;
+		font-size: 15.5px;
+	}
+	@media screen and (min-width: 1800px){
+		margin: 28px 1300px 0 190px;
+	}
+	@media screen and (min-width: 1900px){
+		margin: 120px 1300px 0 190px;
+	}
+
 }
 
 
@@ -517,6 +536,12 @@ body {
 				font-size: 24px;
 				margin: 0 auto;	
 				padding-bottom: 35px;			
+			}
+			@media screen and (min-width: 1778px){
+				margin-top: 70px;		
+			}
+			@media screen and (min-width: 1900px){
+				margin-top: 120px;		
 			}
 		}
 
