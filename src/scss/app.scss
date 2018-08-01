@@ -3,10 +3,10 @@
 @import 'reset';
 
 @font-face {
-	font-family: 'funnier';
-	src: url(../../dist/fonts/funnier.ttf) format('truetype'),
-		 url(../../dist/fonts/funnier.ttf) format('trueType'),
-		 url(../../dist/fonts/funnier.ttf) format('ttf'); 
+	font-family: 'pontiac';
+	src: url(../../dist/fonts/pontiac.otf) format('opentype'),
+		 url(../../dist/fonts/pontiac.otf) format('openType'),
+		 url(../../dist/fonts/pontiac.otf) format('otf'); 
 }
 
 
@@ -20,6 +20,7 @@
 body {                    
 	height: 100%;
 	font-family: 'Raleway', sans-serif;
+	background-color: #fdfcda;
 }
 
 
@@ -1060,10 +1061,78 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	padding-bottom: 60px;
+	align-items: center;
+	
 
 	//desktop
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
+	}
+
+
+	.color{
+		color: transparent;
+		background-image: url(../../dist/img/colorgame.svg);
+		background-repeat: no-repeat;
+
+		&:hover{
+			background-image:none;
+		}
+
+		h1{
+			color: transparent;
+
+			//show icon on hover and hide text
+			&:hover{
+				font-size: 17px;
+				color: #a9388c;
+			}
+		}
+
+		
+	}
+
+	.cleanBeach{
+		color: transparent;
+		background: url(../../dist/img/beachgame.svg);
+		background-repeat: no-repeat;
+		transition: .2s ease-in-out;
+
+		&:hover{
+			background-image:none;
+		}
+
+		h1{
+			color: transparent;
+
+			//show icon on hover and hide text
+			&:hover{
+				font-size: 17px;
+				color: #f80368;
+			}
+		}	
+	}
+
+	.puzzles{
+		color: transparent;
+		background: url(../../dist/img/puzzlegame.svg);
+		background-repeat: no-repeat;
+
+		&:hover{
+			background-image:none;
+		}
+
+		h1{
+			color: transparent;
+
+			//show icon on hover and hide text
+			&:hover{
+				font-size: 17px;
+				color: #fc9400
+			}
+		}
+
+		
 	}
 
 	div a{
@@ -1071,18 +1140,20 @@ body {
 
 
 		h1{
+			
 			font-family: 'funnier', Fallback, sans-serif;
-			font-size: 14px;
+			font-size: 16px;
 			padding: 30px;
 			border-radius: 50%;
 			width: 200px;
 			height: 200px;
 			margin: 15px auto;
-			line-height: 2em;
+			line-height: 1.5em;
 			text-align: center;
 			color: #fff;
 			padding-top: 70px;
 			letter-spacing: 0.08em;
+			transition: .2s ease-in-out;
 
 			//desktop
 			@media screen and (min-width: 768px) {
@@ -1090,35 +1161,7 @@ body {
 			}
 		}
 
-		.matchColors{
-			background-color: #a9388c;
-
-			//show icon on hover and hide text
-			&:hover{
-				color: #a9388c;
-				background: url(../../dist/img/colorgame.svg);
-			}
-		}
-
-		.cleanBeach{
-			background-color: #f80368;
-
-			//show icon on hover and hide text
-			&:hover{
-				color: #f80368;
-				background: url(../../dist/img/beachgame.svg);
-			}
-		}
-
-		.puzzles{
-			background-color: #fc9400;
-
-			//show icon on hover and hide text
-			&:hover{
-				color: #fc9400;
-				background: url(../../dist/img/puzzlegame.svg);
-			}
-		}
+		
 	}
 
 }
