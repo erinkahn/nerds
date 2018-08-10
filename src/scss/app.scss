@@ -843,7 +843,6 @@ body {
 		@media screen and (min-width: 815px){
 			left: 2px;
 			top: 358px;
-			// width: 26%;
 		}
 		@media screen and (min-width: 980px){
 			top: 378px;
@@ -1040,6 +1039,22 @@ body {
 	//cover the white under orange layer
 	@media screen and(min-width: 1210px) {
 		margin-top: -725px;
+	}
+
+	img{
+		transform: rotate(-13deg);
+		position: absolute;		
+		@media screen and (max-width: 799px){
+			top: 90px;
+    		right: 22px;
+    		width: 25%;
+		}
+		@media screen and (min-width: 800px){
+			top: 150px;
+    		right: 50px;
+    		width: 24%;
+		}
+		
 	}
 
 	div{
