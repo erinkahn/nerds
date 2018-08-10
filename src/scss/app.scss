@@ -18,6 +18,7 @@
 	width: 100%;
 	margin: 0 auto;
 	background-color: #fdfcda;
+	box-shadow: 3px 3px 30px 1px #150b13;
 }
 
 * {
@@ -27,7 +28,8 @@
 body {                    
 	height: 100%;
 	font-family: 'Raleway', sans-serif;
-	background-color: #913079;
+	background-color: #672256;
+	
 }
 
 
@@ -459,7 +461,7 @@ body {
 
 
 .top-bkg-section{
-	height: 702px;
+	height: 608px;
 	background: //mobile size
 		url(../../dist/img/4.svg), 
 		url(../../dist/img/blackunderpurple.png), 
@@ -472,11 +474,26 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
 	//                   purple  pblack   pink   pblack  yellow  yblack  orange  oblack
-	background-position: 0 30px, 0 11px, 0 9px, 0 4px, 0 -26px, 0 12px, 0 0, 0 0;
+	background-position: 0 30px, -16px 10px, 0 9px, -6px 10px, 0px -26px, -7px 12px, 0 0, -15px 5px;
 	//desktop
 	@media screen and (min-width: 522px) {
 		height: 1880px;
-		background-position: 0 79px, 0 49px, 0 28px, 0 20px, 0 -43px, 0 16px, 0 0, 0 17px;
+		background-position: 0 79px, -15px 48px, 0 28px, -6px 25px, 0 -43px, -7px -7px, 0 0, -12px 9px;
+	}
+	@media screen and (min-width: 610px) {
+		background-position: 0 79px, -15px 48px, 0 28px, -6px 25px, 0 -43px, -12px -2px, 1px 0, -12px 9px;
+	}
+	@media screen and (min-width: 768px) {
+		background-position: 0 79px, -28px 48px, 0 28px, -6px 33px, -2px -50px, -20px 3px, 1px 0, -12px 9px;
+	}
+	@media screen and (min-width: 963px) {
+		background-position: 0px 79px, -29px 41px, 0 28px, -6px 33px, -3px -61px, -22px 3px, 1px 0, -26px 9px;
+	}
+	@media screen and (min-width: 1144px) {
+		background-position: 0 79px, -36px 21px, 0 28px, -17px 38px, -3px -75px, -31px 3px, 1px 0, -29px 6px;
+	}
+	@media screen and (min-width: 1341px) {
+		background-position: 0 79px, -52px 21px, 0 28px, -17px 38px, -3px -75px, -39px 27px, 1px 0, -29px 6px;
 	}
 
 }
@@ -487,73 +504,75 @@ body {
 
 
 .video-section{
-	margin-top: -209px;
+	margin-top: -140px;
 	position: relative;
 	padding-bottom: 35px;
 
 	//tablet
 	@media screen and (min-width: 522px) {
-		margin-top: -1200px;
+		margin-top: -1400px;
 	}
 
 	//desktop
-	@media screen and (min-width: 768px){
-		margin-top: -1150px;
+	@media screen and (min-width: 1035px){
+		margin-top: -1340px;
+	}
+	@media screen and (min-width: 1150px){
+		margin-top: -1286px;
+	}
+	@media screen and (min-width: 1280px){
+		margin-top: -1280px;
+	}
+	@media screen and (min-width: 1330px){
+		margin-top: -1201px;
 	}
 
 	.video{
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		align-items: center;
 
 		p{
+			white-space: nowrap;
 			display: none;
 			text-align: center;			
 			color: #fdfcda;
+			padding-bottom: 10px;
 			font-family: 'pontiac', Fallback, sans-serif;
 
-			@media screen and (min-width: 402px) {
+			@media screen and (min-width: 490px) {
 				display: flex;
 				font-size: 13px;
 				text-align: center;
-				margin: -5px 20px 5px 179px;
 				line-height: 2em;
-			}
-
-			@media screen and (min-width: 430px) {
-				display: flex;
-				margin: 0 60px 10px 179px;
+				letter-spacing: 0.04em;
 			}
 
 			@media screen and (min-width: 527px) {
-				font-size: 15px;
+				font-size: 14px;
+				letter-spacing: 0.08em;
 				display: flex;
-				margin: 0 58px 10px 182px;
-			}
-
-			@media screen and (min-width: 590px) {
-				white-space: nowrap;
-				display: flex;
-				margin: 0 58px 10px 159px;
+				margin: 0 auto;
 			}
 
 			//desktop
 			@media screen and (min-width: 719px){
 				display: flex;
 				white-space: nowrap;
-				font-size: 24px;
+				font-size: 17px;
 				margin: 0 auto;	
 				padding-bottom: 35px;			
 			}
-			@media screen and (min-width: 1778px){
-				margin-top: 70px;		
+
+			@media screen and (min-width: 1330px){
+				font-size: 18px;
 			}
-			@media screen and (min-width: 1900px){
-				margin-top: 120px;		
-			}
+
 		}
 
 		img{
+			z-index: 3;
 			display: flex;
 			align-self: center;
 			height: 275px;
@@ -562,14 +581,18 @@ body {
 			//tablet
 			@media screen and (min-width: 527px){
 				height: 380px;
-				width: 500px;
+				width: 449px;
 			}
 
 			//desktop
 			@media screen and (min-width: 768px){
-				height: 360px;
+				height: 390px;
 				width: 550px;
+			}
 
+			@media screen and (min-width: 1224px){
+				height: 440px;
+				width: 700px;
 			}
 		}
 	}
