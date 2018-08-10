@@ -845,11 +845,12 @@ body {
 			top: 358px;
 		}
 		@media screen and (min-width: 980px){
-			top: 378px;
+			top: 438px;
 		}
 	
 		@media screen and (min-width: 1155px){
-			top: 440px;
+			top: 550px;
+			left: -20px;
 		}
 	}
 
@@ -900,64 +901,70 @@ body {
 			//push down the orange layer text and add margin
 			@media screen and(min-width: 637px) {
 				font-size: 14px;
-				padding-top: 248px;
+				padding-top: 267px;
 				margin: 0 30px 0 220px;
 			}
 
 			//push down the orange layer text and add margin
 			@media screen and(min-width: 683px) {
 				font-size: 14px;
-				padding-top: 290px;
+				padding-top: 333px;
 				margin: 0 60px 0 270px;
 			}
 
 			//push down the orange layer text and add margin
 			@media screen and (min-width: 785px) {
-				padding-top: 308px;
-				margin: 0 70px 0 299px;
+				padding-top: 353px;
+				margin: 1px 70px 0 320px;
 				font-size: 16px;
 			}
 
 			//push down the orange layer text and add margin
 			@media screen and (min-width: 896px) {
-				padding-top: 250px;
-				margin: 0 40px 0 455px;
+				padding-top: 302px;
+				margin: 0 40px 0 424px;
 				font-size: 17px;
 			}
 
 			//push down the orange layer text and add margin
 			@media screen and (min-width: 971px) {
-				padding-top: 275px;
+				padding-top: 328px;
 			}
 
 			//push down the orange layer text and add margin
 			@media screen and (min-width: 1000px) {
-				padding-top: 269px;
-				margin: 0 30px 0 475px;
+				padding-top: 326px;
+				margin: 0 30px 0 444px;
 				font-size: 19px;
 			}
 
 			//push down the orange layer text and add margin
 			@media screen and (min-width: 1100px) {
-				padding-top: 307px;
+				padding-top: 351px;
 				margin: 0 42px 0 475px;
 			}
 
 			//push down the orange layer text and add margin
 			@media screen and (min-width: 1150px) {
 				padding-top: 347px;
-				margin: 0 42px 0 489px;
+    			margin: 0 103px 0 469px;
 			}
 
 			//push down the orange layer text and add margin
 			@media screen and (min-width: 1207px) {
-				padding-top: 250px;
+				padding-top: 321px;
 				margin: 0 67px 0 675px;
 			}
 
 			//push down the orange layer text and add margin
 			@media screen and (min-width: 1300px) {
-				padding-top: 320px;
+				padding-top: 367px;
+			}
+
+			//push down the orange layer text and add margin
+			@media screen and (min-width: 1372px) {
+				padding-top: 367px;
+				margin: 0 93px 0 736px;
 			}
 
 		}
@@ -977,14 +984,14 @@ body {
 .character3{
 	position: relative;  //IMPORTANT!!!!!!!!
 
-	margin-top: -560px;
+	margin-top: -580px;
 	background: 
 		url(../../dist/img/7withcharacter.svg), 
 		url(../../dist/img/blackunderyellowch.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
 	background-position: 0 81px, 0 87px;
-	height: 700px; //background images must have a set height
+	height: 720px; //background images must have a set height
 	padding-bottom: 30px;
 	transition: 0.2s; //REally cool! use this more
 	margin-bottom: 0px; // for the start of the transition ( 0 )
@@ -992,12 +999,12 @@ body {
 	//make the yellow thicker to not hide
 	//the character or name
 	@media screen and (min-width: 520px) {
-		height: 740px;
+		height: 770px;
 	}
 	//make the yellow thicker to not hide
 	//the character or name
 	@media screen and(min-width: 678px) {
-		height: 820px;
+		height: 860px;
 	}
 	//cover the white under orange layer
 	@media screen and(min-width: 730px) {
@@ -1022,7 +1029,7 @@ body {
 	//make the yellow thicker to not hide
 	//the character or name
 	@media screen and(min-width: 1000px) {
-		height: 920px;
+		height: 990px;
 	}
 	//cover the white under orange layer
 	@media screen and(min-width: 1074px) {
@@ -1065,7 +1072,7 @@ body {
 			display: none; //hide the text
 			font-size: 13px;
 			color: #fdfcda; 
-			padding-top: 240px;
+			padding-top: 270px;
 			margin: 0 40px;
 			line-height: 2em;
 			text-align: left;
@@ -1079,7 +1086,7 @@ body {
 
 			//adjust the text position and margin
 			@media screen and (min-width: 567px) {
-				padding-top: 320px;
+				padding-top: 330px;
 				margin: 0 60px;
 				font-size: 14px;
 			}
@@ -1094,7 +1101,7 @@ body {
 			//adjust the text position and margin
 			@media screen and (min-width: 800px) {
 				padding-top: 388px;
-				margin: 0 80px;
+				margin: 0 100px;
 				font-size: 16px;
 				line-height: 2.3em;
 			}
@@ -1102,7 +1109,7 @@ body {
 			//adjust the text position and margin
 			@media screen and (min-width: 925px) {
 				padding-top: 408px;
-				margin: 0 177px;
+				margin: 0 220px;
 				font-size: 17px;
 			}
 
@@ -1115,27 +1122,27 @@ body {
 			}
 
 			@media screen and (min-width: 1178px) {
-				padding-top: 484px;
+				padding-top: 524px;
 				margin: 0 230px;
 				line-height: 2.2em;
 			}
 
 			//adjust the text position and margin
 			@media screen and (min-width: 1224px) {
-				padding-top: 478px;
+				padding-top: 508px;
 				margin: 0 290px;
 			}
 
 			//adjust the text position and margin
 			@media screen and (min-width: 1280px) {
-				padding-top: 496px;
+				padding-top: 520px;
 				margin: 0 340px;
 			}
 
 			//adjust the text position and margin
 			@media screen and (min-width: 1337px) {
-				padding-top: 519px;
-				// margin: 0 430px;
+				padding-top: 530px;
+				margin: 0 350px;
 
 			}
 		}
