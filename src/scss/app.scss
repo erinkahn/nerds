@@ -614,8 +614,8 @@ body {
 		url(../../dist/img/blackunderpinkch.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
-	background-position: 0 30px, 0 15px;
-	height: 700px; //background images must have a set height
+	background-position: 0 33px, 0 25px;
+	height: 720px; //background images must have a set height
 	transition: 0.2s; //REally cool! use this more
 	margin-bottom: 0px; // for the start of the transition ( 0 )
 	
@@ -760,7 +760,7 @@ body {
 		url(../../dist/img/blackunderorangech.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
-	background-position: 0 20px, 0 14px;
+	background-position: 0 20px, 0 19px;
 	height: 729px; //background images must have a set height
 	transition: 0.2s; //REally cool! use this more
 	margin-bottom: 0px; // for the start of the transition ( 0 )
@@ -808,7 +808,7 @@ body {
 	}
 	//cover the white under pink
 	@media screen and(min-width: 1200px) {
-		height: 1030px;
+		height: 1000px;
 		margin-top: -704px;
 	}
 
@@ -983,7 +983,7 @@ body {
 		url(../../dist/img/blackunderyellowch.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto; 
-	background-position: 0 40px, 0 33px;
+	background-position: 0 81px, 0 87px;
 	height: 700px; //background images must have a set height
 	padding-bottom: 30px;
 	transition: 0.2s; //REally cool! use this more
@@ -1065,7 +1065,7 @@ body {
 			display: none; //hide the text
 			font-size: 13px;
 			color: #fdfcda; 
-			padding-top: 200px;
+			padding-top: 240px;
 			margin: 0 40px;
 			line-height: 2em;
 			text-align: left;
@@ -1074,7 +1074,7 @@ body {
 
 			//adjust the text position and margin
 			@media screen and (min-width: 433px) {
-				padding-top: 250px;
+				padding-top: 280px;
 			}
 
 			//adjust the text position and margin
@@ -1087,7 +1087,8 @@ body {
 			//adjust the text position and margin
 			@media screen and (min-width: 678px) {
 				font-size: 15px;
-				padding-top: 330px;
+				padding-top: 380px;
+				margin: 0 90px;
 			}
 
 			//adjust the text position and margin
@@ -1099,7 +1100,7 @@ body {
 			}
 
 			//adjust the text position and margin
-			@media screen and (min-width: 950px) {
+			@media screen and (min-width: 925px) {
 				padding-top: 408px;
 				margin: 0 177px;
 				font-size: 17px;
@@ -1107,22 +1108,34 @@ body {
 
 			//adjust the text position and margin
 			@media screen and (min-width: 1000px) {
-				padding-top: 438px;
+				padding-top: 454px;
 				margin: 0 180px;
 				font-size: 20px;
 				line-height: 2.3em;
 			}
 
+			@media screen and (min-width: 1178px) {
+				padding-top: 484px;
+				margin: 0 230px;
+				line-height: 2.2em;
+			}
+
 			//adjust the text position and margin
 			@media screen and (min-width: 1224px) {
-				padding-top: 458px;
-				margin: 0 200px;
-				line-height: 2.4em;
+				padding-top: 478px;
+				margin: 0 290px;
 			}
 
 			//adjust the text position and margin
 			@media screen and (min-width: 1280px) {
-				padding-top: 489px;
+				padding-top: 496px;
+				margin: 0 340px;
+			}
+
+			//adjust the text position and margin
+			@media screen and (min-width: 1337px) {
+				padding-top: 519px;
+				// margin: 0 430px;
 
 			}
 		}
