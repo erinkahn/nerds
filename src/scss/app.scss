@@ -338,105 +338,6 @@ body {
 }
 
 
-// position text under nerds logo at diff media points
-.top-text{
-	display: none;
-	font-family: 'pontiac', Fallback, sans-serif;
-	color: #fdfcda;
-	font-size: 9px;
-	line-height: 2em;
-	letter-spacing: 0.08em;
-
-	@media screen and (min-width: 522px){
-		display: flex;
-		padding: 400px 0;
-		margin: 0 155px 0 40px;
-		line-height: 2.3em;
-		font-size: 10px;
-	}
-
-	@media screen and (min-width: 608px){
-		margin: 0 169px 0 40px;
-		font-size: 11px;
-		line-height: 2.7em;
-	}
-
-	@media screen and (min-width: 620px){
-		margin: 0 230px 0 40px;
-		font-size: 11px;
-		line-height: 2.7em;
-	}
-
-	@media screen and (min-width: 768px){
-		padding: 470px 0;
-		margin: 0 280px 0 70px;
-		font-size: 12px;
-	}
-
-	@media screen and (min-width: 880px){
-		padding: 500px 0;
-		margin: 0 350px 0 70px;
-		font-size: 13px;
-	}
-
-	@media screen and (min-width: 1000px){
-		font-size: 14px;
-		padding: 518px 0;
-		margin: 0 380px 0 70px;
-	}
-
-	@media screen and (min-width: 1114px){
-		padding: 539px 0;
-		margin: 0 400px 0 70px;
-	}
-
-	@media screen and (min-width: 1200px){
-		font-size: 11px;
-		padding: 830px 0;
-		margin: 0 920px 0 50px;
-	}
-
-	@media screen and (min-width: 1230px){
-		font-size: 12px;
-		margin: 0 960px 0 55px;
-	}
-
-	@media screen and (min-width: 1350px){
-		margin: 0 1040px 0 65px;
-		font-size: 13px;
-	}
-	@media screen and (min-width: 1460px){
-		margin: 0 1080px 0 65px;
-		font-size: 14px;
-	}
-	@media screen and (min-width: 1584px){
-		margin: 0 1109px 0 65px;
-		font-size: 14px;
-	}
-	@media screen and (min-width: 1600px){
-		margin: 0 1109px 0 65px;
-		font-size: 14.3px;
-	}
-	@media screen and (min-width: 1683px){
-		margin: 20px 1200px 0 65px;
-		font-size: 15px;
-	}
-	@media screen and (min-width: 1700px){
-		margin: 0px 1290px 0 90px;
-		font-size: 15.5px;
-	}
-	@media screen and (min-width: 1800px){
-		margin: 28px 1300px 0 190px;
-	}
-	@media screen and (min-width: 1900px){
-		margin: 120px 1300px 0 190px;
-	}
-
-}
-
-
-
-
 
 #top{
 
@@ -812,45 +713,50 @@ body {
 		margin-top: -704px;
 	}
 
-	img{
+	img{ //fidget
 		transform: rotate(-13deg);
 		position: absolute;		
 		@media screen and (max-width: 465px){
 			top: 180px;
-			left: 3px;
-			width: 34%;
+			left: -8px;
+			width: 40%;
 		}
 		@media screen and (min-width: 466px){
-			left: 4px;
-			width: 34%;
-			top: 238px;
-		}
-		@media screen and (min-width: 657px){
-			left: 20px;
-			top: 298px;
-			width: 26%;
+			left: -8px;
+			top: 230px;
+			width: 40%;
 		}
 		@media screen and (min-width: 685px){
-			left: 45px;
-			top: 328px;
-			width: 26%;
+			left: -8px;
+			top: 308px;
+			width: 40%;
 		}
 		@media screen and (min-width: 700px){
-			left: 16px;
-			top: 328px;
+			left: 0px;
+			top: 300px;
 			width: 39%;
 		}
 		@media screen and (min-width: 815px){
-			left: 2px;
-			top: 358px;
+			left: 12px;
+			top: 359px;
+			width: 33%;
 		}
 		@media screen and (min-width: 980px){
-			top: 438px;
+			top: 400px;
+			width: 30%;
+			left: 30px;
 		}
-	
+		@media screen and (min-width: 1024px){
+			top: 420px;
+			left: 49px;
+		}
 		@media screen and (min-width: 1155px){
-			top: 550px;
-			left: -20px;
+			top: 470px;
+			left: 59px;
+		}
+		@media screen and (min-width: 1324px){
+			top: 510px;
+			left: 59px;
 		}
 	}
 
@@ -1049,12 +955,12 @@ body {
 	}
 
 	img{
-		transform: rotate(-13deg);
+		transform: rotate(13deg);
 		position: absolute;		
 		@media screen and (max-width: 799px){
-			top: 90px;
-    		right: 22px;
-    		width: 28%;
+			top: 120px;
+    		right: 29px;
+    		width: 32%;
 		}
 		@media screen and (min-width: 800px){
 			top: 150px;
@@ -1195,6 +1101,12 @@ body {
 		@media screen and (max-width: 768px) {
 			padding-top: 30px;
 		}
+		@media screen and (min-width: 1000px) {
+			margin-top: 230px;
+		}
+		@media screen and (min-width: 1024px) {
+			margin-top: 270px;
+		}
 	}
 }
 
@@ -1311,8 +1223,111 @@ body {
 
 
 
+//-----------games 2-----------------------------------------
+
+#games2{
+
+	// position: absolute;
+	// top: 0;
+	// perspective: 4900px;
+	// perspective-origin: center;
+	// width: 100%;
+	// height: 100vh;
+	overflow: hidden;
 
 
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+
+	.lets-play{
+		width: 100%;
+		background: url(../../dist/img/8copy.svg);
+		background-repeat: no-repeat;
+		z-index: 2;
+		background-size: 100%; 
+
+		h2{
+			@media screen and (max-width: 500px){
+				font-size: 1.5em;
+			}
+		}
+		
+	}	
+
+
+	.arrows{
+		position: absolute;
+		width: 100%;
+		height: 0;
+		padding-bottom: 100%;
+		bottom: 0;
+		top: 320vh;
+
+		a{
+			position: absolute;
+			transition: .3s;
+			width: 1.5%;
+			height: 0;
+			padding-bottom: 10%;
+			&:hover{
+				transition: .3s ease-in-out;
+				filter: sepia(80%);
+				cursor: pointer;
+			}
+		}
+
+		.body-previouws, .body-next{
+			top: 5%;
+		}
+
+		.eyes-previous, .eyes-next{
+			top: 20%;
+		}
+
+		.mouth-previous, .mouth-next{
+			top: 24%;
+		}
+
+		.shoes-previous, .shoes-next{
+			top: 28%;
+		}
+
+		.next{
+			background: url('../img/next-arrow.png') no-repeat center;
+			background-size: 100%;
+			right: 34%;
+			z-index: 100;
+		}
+
+		.previous{
+			background: url('../img/previous-arrow.png') no-repeat center;
+			background-size: 100%;
+			left: 34%;
+			z-index: 100;
+		}
+	}
+	
+
+	.curtains{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+		img{
+			@media screen and (max-width: 767px){
+				width: 100%;
+				min-width: 120px;
+				max-width: 140px;
+				height: 60vh;
+			}
+			width: 100%;
+			max-width: 300px;
+			height: 90vh;
+		}
+	}
+
+}
 
 
 
