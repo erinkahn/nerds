@@ -1291,18 +1291,25 @@ body {
 		li{
 			width: 100%;
 			position: absolute;
+			margin: 0 auto;
 			left: 50%;
 			transform: translateX(-50%); 
 			height: 0;
 			padding-bottom: 100%;
 			backface-visibility: hidden;
-			@media screen and (max-width: 570px){
-				top: -80px;
-				min-width: 240px;
+			@media screen and (max-width: 767px){
+				top: -50px;
+				width: 190px;
 			}
-			@media screen and (min-width: 571px){
-				min-width: 270px;
-				top: -80px;
+			@media screen and (min-width: 768px){
+				width: 370px;
+				top: -90px;
+				padding-bottom: 160%;
+			}
+			@media screen and (min-width: 1024px){
+				top: -330px;
+				width: 500px;
+				padding-bottom: 200%;
 			}
 		}
 	}
@@ -1311,6 +1318,7 @@ body {
 
 
 .eyes{
+	z-index: 3;
 
 	.image1{
 		background-image: url(../../dist/img/eye1.svg) no-repeat;
@@ -1340,6 +1348,7 @@ body {
 }
 
 .mouth{
+	z-index: 3;
 	
 	.image1{
 		background: url(../../dist/img/mouth1.svg) no-repeat;
@@ -1368,6 +1377,7 @@ body {
 }
 
 .shoes{
+	z-index: 3;
 	
 	.image1{
 		background: url(../../dist/img/blackShoes.svg) no-repeat;
@@ -1396,6 +1406,7 @@ body {
 }
 
 .body{
+	z-index: 0;
 
 	.image1{
 		background: url(../../dist/img/swirlBody.svg) no-repeat;
@@ -1413,11 +1424,10 @@ body {
 		background: url(../../dist/img/greenBody.svg) no-repeat;
 		transform: rotateY(120deg) translateZ(55vw);
 		background-size: contain;
-		max-width: 200px;
 	}
 
 	.image4{
-		background: url(../../dist/img/greenBody.svg) no-repeat;
+		background: url(../../dist/img/body4.svg) no-repeat;
 		transform: rotateY(180deg) translateZ(55vw);
 		background-size: contain;
 	}
