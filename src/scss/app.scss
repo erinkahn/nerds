@@ -1225,21 +1225,14 @@ body {
 
 //-----------games 2-----------------------------------------
 
+// outside container
 #games2{
-
-	// position: absolute;
-	// top: 0;
-	// perspective: 4900px;
-	// perspective-origin: center;
-	// width: 100%;
-	// height: 100vh;
+	perspective-origin: center;
 	overflow: hidden;
-
-
-	padding-bottom: 80px;
 	display: flex;
 	flex-direction: column;
-
+	
+	// heading
 	.lets-play{
 		width: 100%;
 		background: url(../../dist/img/8copy.svg);
@@ -1253,81 +1246,255 @@ body {
 			}
 		}
 		
-	}	
+	}
 
-
-	.arrows{
-		position: absolute;
-		width: 100%;
+	// background curtains
+	.bkg{
+		max-height: 802px;
+		background-image: url('../img/curtain-bkg.png');
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
 		height: 0;
+		background-size: cover;
 		padding-bottom: 100%;
-		bottom: 0;
-		top: 320vh;
+		width: 100%;
+		@media screen and (min-width: 1024px){
+			padding-bottom: 77%;
+		}
+	}
 
-		a{
+
+}
+
+// container of arrows and body parts
+
+.bkg{
+	margin-bottom: 5%;
+	
+	.options{
+		width: 100%;
+		max-width: 300px;
+		transition: transform .8s;
+		transform: rotateY(0deg);
+		transform-style: preserve-3d;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+
+		&.bod img{
+			max-width: 500px;
+			min-width: 300px;
+			width: 100%;
+		}
+
+		// images
+		li{
+			width: 100%;
 			position: absolute;
-			transition: .3s;
-			width: 1.5%;
+			left: 50%;
+			transform: translateX(-50%); 
 			height: 0;
-			padding-bottom: 10%;
-			&:hover{
-				transition: .3s ease-in-out;
-				filter: sepia(80%);
-				cursor: pointer;
+			padding-bottom: 100%;
+			backface-visibility: hidden;
+			@media screen and (max-width: 570px){
+				top: -80px;
+				min-width: 240px;
+			}
+			@media screen and (min-width: 571px){
+				min-width: 270px;
+				top: -80px;
 			}
 		}
+	}
+}
 
-		.body-previouws, .body-next{
-			top: 5%;
-		}
 
-		.eyes-previous, .eyes-next{
-			top: 20%;
-		}
 
-		.mouth-previous, .mouth-next{
-			top: 24%;
-		}
+.eyes{
 
-		.shoes-previous, .shoes-next{
-			top: 28%;
-		}
+	.image1{
+		background-image: url(../../dist/img/eye1.svg) no-repeat;
+		transform: rotateY(0deg) translateZ(55vw);
+		background-size: cover;
+	}
 
-		.next{
-			background: url('../img/next-arrow.png') no-repeat center;
-			background-size: 100%;
-			right: 34%;
-			z-index: 100;
-		}
+	.image2{
+		background-image: url(../../dist/img/eye2.svg) no-repeat;
+		transform: rotateY(45deg) translateZ(55vw);
+		background-size: cover;
+	}
 
-		.previous{
-			background: url('../img/previous-arrow.png') no-repeat center;
-			background-size: 100%;
-			left: 34%;
-			z-index: 100;
-		}
+	.image3{
+		background-image: url(../../dist/img/eye3.svg) no-repeat;
+		transform: rotateY(90deg) translateZ(55vw);
+		background-size: cover;
+	}
+
+	.image4{
+		background: url(../../dist/img/eye4.svg) no-repeat;
+		transform: rotateY(135deg) translateZ(55vw);
+		background-size: cover;
 	}
 	
 
-	.curtains{
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
+}
 
-		img{
-			@media screen and (max-width: 767px){
-				width: 100%;
-				min-width: 120px;
-				max-width: 140px;
-				height: 60vh;
-			}
-			width: 100%;
-			max-width: 300px;
-			height: 90vh;
-		}
+.mouth{
+	
+	.image1{
+		background: url(../../dist/img/mouth1.svg) no-repeat;
+		transform: rotateY(0deg) translateZ(55vw);
+		background-size: cover;
+	}
+
+	.image2{
+		background: url(../../dist/img/mouth2.svg) no-repeat;
+		transform: rotateY(72deg) translateZ(55vw);
+		background-size: cover;
+	}
+
+	.image3{
+		background: url(../../dist/img/mouth3.svg) no-repeat;
+		transform: rotateY(144deg) translateZ(55vw);
+		background-size: cover;
+	}
+
+	.image4{
+		background: url(../../dist/img/mouth4.svg) no-repeat;
+		transform: rotateY(216deg) translateZ(55vw);
+		background-size: cover;
 	}
 
 }
+
+.shoes{
+	
+	.image1{
+		background: url(../../dist/img/blackShoes.svg) no-repeat;
+		transform: rotateY(0deg) translateZ(55vw);
+		background-size: cover;
+	}
+
+	.image2{
+		background: url(../../dist/img/socks.svg) no-repeat;
+		transform: rotateY(90deg) translateZ(55vw);
+		background-size: cover;
+	}
+
+	.image3{
+		background: url(../../dist/img/tennisShoes.svg) no-repeat;
+		transform: rotateY(180deg) translateZ(55vw);
+		background-size: cover;
+	}
+
+	.image4{
+		background: url(../../dist/img/yellowShoes.svg) no-repeat;
+		transform: rotateY(270deg) translateZ(55vw);
+		background-size: cover;
+	}
+	
+}
+
+.body{
+
+	.image1{
+		background: url(../../dist/img/swirlBody.svg) no-repeat;
+		transform: rotateY(0deg) translateZ(55vw);
+		background-size: contain;
+	}
+
+	.image2{
+		background: url(../../dist/img/pinkBody.svg) no-repeat;
+		transform: rotateY(60deg) translateZ(55vw);
+		background-size: contain;
+	}
+
+	.image3{
+		background: url(../../dist/img/greenBody.svg) no-repeat;
+		transform: rotateY(120deg) translateZ(55vw);
+		background-size: contain;
+		max-width: 200px;
+	}
+
+	.image4{
+		background: url(../../dist/img/greenBody.svg) no-repeat;
+		transform: rotateY(180deg) translateZ(55vw);
+		background-size: contain;
+	}
+	
+}
+
+
+
+.arrows{
+	position: relative;
+	display: flex;
+	align-items: center;
+	top: 240px;
+	z-index: 800;
+	padding-bottom: 44%;
+	
+
+	a{
+		position: absolute;
+		transition: .3s;
+		width: 1.5%;
+		height: 0;
+		padding-bottom: 23%;
+		&:hover{
+			transition: .3s ease-in-out;
+			filter: sepia(80%);
+			cursor: pointer;
+		}
+	}
+
+	.eyes-previous, .eyes-next{
+		top: 13%;
+	}
+
+	.mouth-previous, .mouth-next{
+		top: 55%;
+	}
+
+	.shoes-previous, .shoes-next{
+		top: 98%;
+	}
+
+
+	.next{
+		background: url('../img/next-arrow.png') no-repeat center;
+		background-size: 100%;
+		right: 33%;
+		z-index: 100;
+	}
+
+	.previous{
+		background: url('../img/previous-arrow.png') no-repeat center;
+		background-size: 100%;
+		left: 33%;
+		z-index: 100;
+	}
+}
+
+
+.curtains{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+	img{
+		@media screen and (max-width: 767px){
+			width: 100%;
+			min-width: 120px;
+			max-width: 140px;
+			height: 60vh;
+		}
+		width: 100%;
+		max-width: 300px;
+		height: 90vh;
+	}
+}
+
 
 
 
