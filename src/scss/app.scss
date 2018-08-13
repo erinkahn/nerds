@@ -543,6 +543,7 @@ nav{
 		height: 980px;
 	}
 
+	// invisible box 
 	span{ // make box on whimsy pink that clicks and shows pink section only
 		@media screen and (max-width: 677px){
 			top: 19%;
@@ -762,6 +763,74 @@ nav{
 	@media screen and(min-width: 1200px) {
 		height: 1000px;
 		margin-top: -704px;
+	}
+
+	// invisible box
+	span{ // make box on fidget orange that clicks and shows orange section only
+		@media screen and (max-width: 524px){
+			top: 17%;
+			padding-bottom: 52%;
+			width: 33%;
+			max-width: 329px;
+		}
+		@media screen and (min-width: 525px){
+			padding-bottom: 38%;
+			width: 37%;
+			top: 21%;
+			max-width: 217px;
+		}
+		@media screen and (min-width: 657px){
+			padding-bottom: 29%;
+			top: 25%;
+			max-width: 230px;
+		}
+		@media screen and (min-width: 678px){
+			width: 45%;
+			padding-bottom: 43%;
+			max-width: 250px;
+		}
+		@media screen and (min-width: 774px){
+			width: 49%;
+			padding-bottom: 38%;
+			top: 28%;
+		}
+		@media screen and (min-width: 841px){
+			width: 60%;
+			padding-bottom: 33%;
+			top: 28%;
+			max-width: 320px;
+		}
+		@media screen and (min-width: 1000px){
+			width: 47%;
+			padding-bottom: 38%;
+			top: 26%;
+			max-width: 367px;
+		}
+		@media screen and (min-width: 1075px){
+			width: 47%;
+			padding-bottom: 30%;
+			top: 29%;
+			max-width: 367px;
+		}
+		@media screen and (min-width: 1172px){
+			width: 53%;
+			padding-bottom: 33%;
+			top: 29%;
+			max-width: 410px;
+		}
+		@media screen and (min-width: 1224px){
+			padding-bottom: 29%;
+			top: 33%;
+		}
+		@media screen and (min-width: 1386px){
+			padding-bottom: 27%;
+			top: 37%;
+		}
+		z-index: 90000;
+		position: absolute;
+		top: 24%;
+		background-color: transparent;
+		
 	}
 
 	img{ //fidget
