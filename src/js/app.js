@@ -25,7 +25,7 @@ document.querySelector(".burger").addEventListener("click", function() {
 
 
 var toggleCharacters = function() {
-	console.log("character 2 was clicked");
+	console.log("character  was clicked");
 	
 	// if the one i clicked does not contain the class show, switch to another tab
 	if (this.classList.contains("show") === false) {
@@ -41,7 +41,8 @@ var toggleCharacters = function() {
 	this.classList.toggle("show"); 
 };
 
-// pink click
+document.querySelector('.character1 img').addEventListener('click', toggleCharacters);
+document.querySelector('.character1 span').addEventListener('click', toggleCharacters);
 document.querySelector(".character1").addEventListener("click", toggleCharacters);
 document.querySelector(".character2").addEventListener("click", toggleCharacters);
 document.querySelector(".character3").addEventListener("click", toggleCharacters);

@@ -543,7 +543,56 @@ nav{
 		height: 980px;
 	}
 
+	span{ // make box on whimsy pink that clicks and shows pink section only
+		@media screen and (max-width: 677px){
+			top: 19%;
+			padding-bottom: 23%;
+			width: 44%;
+			max-width: 329px;
+		}
+		@media screen and (min-width: 678px){
+			padding-bottom: 32%;
+			width: 46%;
+			top: 23%;
+		}
+		@media screen and (min-width: 834px){
+			padding-bottom: 22%;
+			top: 25%;
+		}
+		@media screen and (min-width: 933px){
+			width: 45%;
+			padding-bottom: 17%;
+			top: 29%;
+		}
+		@media screen and (min-width: 1000px){
+			width: 47%;
+			padding-bottom: 23%;
+			top: 26%;
+		}
+		@media screen and (min-width: 1170px){
+			top: 29%;
+		}
+		@media screen and (min-width: 1176px){
+			padding-bottom: 18%;
+		}
+		@media screen and (min-width: 1224px){
+			padding-bottom: 20%;
+		}
+		@media screen and (min-width: 1385px){
+			top: 33%;
+			padding-bottom: 18%;
+		}
+		z-index: 90000;
+		position: absolute;
+		top: 24%;
+		background-color: transparent;
+		height: 0px;
+		
+	}
+	
+
 	img{
+		z-index: 8000;
 		transform: rotate(-13deg);
 		position: absolute;		
 		@media screen and (max-width: 465px){
@@ -577,7 +626,7 @@ nav{
 	}
 	
 
-	div{
+	div.text1{
 		display: flex;
 		justify-content: center;
 
@@ -762,7 +811,7 @@ nav{
 		}
 	}
 
-	div{
+	div.text2{
 		display: flex;
 		justify-content: center;
 
@@ -972,7 +1021,7 @@ nav{
 		
 	}
 
-	div{
+	div.text3{
 		display: flex;
 		justify-content: center;
 
