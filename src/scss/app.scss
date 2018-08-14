@@ -1403,13 +1403,15 @@ nav{
 
 	// background curtains
 	.bkg{
-		// max-height: 802px;
-		background-image: url('../img/curtain-bkg.png');
+		@media screen and (max-width: 767px){
+			background-position: -30%, 130%;
+		}
+		background-image: url('../img/curtain-left.png'), url('../img/curtain-right.png');
 		background-repeat: no-repeat;
-		background-position: 50% 100%;
+		background-position: 0%, 100%;
 		height: 0;
-		background-size: cover;
-		width: 100%;
+		background-size: contain;
+		padding-bottom: 100%;
 		@media screen and (max-width: 767px){
 			padding-bottom: 133%;
 		}
@@ -1447,7 +1449,7 @@ nav{
 			padding-bottom: 100%;
 			backface-visibility: hidden;
 			@media screen and (max-width: 767px){
-				width: 70%;
+				width: 79%;
 			}
 			@media screen and (min-width: 768px){
 				width: 60%;
@@ -1467,118 +1469,151 @@ nav{
 
 
 
+//--------------------------------------------------------------------------------------------
+// hide all eyes until you click the next/previous arrows
+.eyes ul li{
+	display: none;
+
+	//show them eyes
+	&.showThatEye{
+		display: flex;
+	}
+}
+
+
 .eyes{
-	z-index: 3;
+	z-index: 4;
 
 	.image1{
-		background-image: url(../../dist/img/eyes1.svg) no-repeat;
-		transform: rotateY(0deg) translateZ(55vw);
+		background: url(../../dist/img/eyes1.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image2{
-		background-image: url(../../dist/img/eyes2.svg) no-repeat;
-		transform: rotateY(45deg) translateZ(55vw);
+		background: url(../../dist/img/eyes2.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image3{
-		background-image: url(../../dist/img/eyes3.svg) no-repeat;
-		transform: rotateY(90deg) translateZ(55vw);
+		background: url(../../dist/img/eyes3.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
-	.image4{
-		background: url(../../dist/img/eyes4.svg) no-repeat;
-		transform: rotateY(135deg) translateZ(55vw);
+	.image4{ 
+		background: url(../../dist/img/eyes4.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 	
 
+}
+
+
+//--------------------------------------------------------------------------------------------
+// hide all mouths until you click the next/previous arrows
+.mouth ul li{
+	display: none;
+
+	//show them eyes
+	&.showThatMouth{
+		display: flex;
+	}
 }
 
 .mouth{
 	z-index: 3;
 	
 	.image1{
-		background: url(../../dist/img/mouth1.svg) no-repeat;
-		transform: rotateY(0deg) translateZ(55vw);
+		background: url(../../dist/img/mouth1.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image2{
-		background: url(../../dist/img/mouth2.svg) no-repeat;
-		transform: rotateY(72deg) translateZ(55vw);
+		background: url(../../dist/img/mouth2.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image3{
-		background: url(../../dist/img/mouth3.svg) no-repeat;
-		transform: rotateY(144deg) translateZ(55vw);
+		background: url(../../dist/img/mouth3.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image4{
-		background: url(../../dist/img/mouth4.svg) no-repeat;
-		transform: rotateY(216deg) translateZ(55vw);
+		background: url(../../dist/img/mouth4.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
+}
+
+
+//--------------------------------------------------------------------------------------------
+// hide all shoes until you click the next/previous arrows
+.shoes ul li{
+	display: none;
+
+	//show them shoes
+	&.showThatShoe{
+		display: flex;
+	}
 }
 
 .shoes{
 	z-index: 3;
 	
 	.image1{
-		background: url(../../dist/img/shoes1.svg) no-repeat;
-		transform: rotateY(0deg) translateZ(55vw);
+		background: url(../../dist/img/shoes1.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image2{
-		background: url(../../dist/img/shoes2.svg) no-repeat;
-		transform: rotateY(90deg) translateZ(55vw);
+		background: url(../../dist/img/shoes2.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image3{
-		background: url(../../dist/img/shoes3.svg) no-repeat;
-		transform: rotateY(180deg) translateZ(55vw);
+		background: url(../../dist/img/shoes3.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image4{
-		background: url(../../dist/img/shoes4.svg) no-repeat;
-		transform: rotateY(270deg) translateZ(55vw);
+		background: url(../../dist/img/shoes4.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 	
 }
 
+
+//--------------------------------------------------------------------------------------------
+// hide all bodies until you click the next/previous arrows
+.body ul li{
+	display: none;
+
+	//show them bodies
+	&.showThatBod{
+		display: flex;
+	}
+}
+
 .body{
 	z-index: -5;
 
+
 	.image1{
-		background: url(../../dist/img/bodygreen.svg) no-repeat;
-		transform: rotateY(0deg) translateZ(55vw);
+		background: url(../../dist/img/bodygreen.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image2{
-		background: url(../../dist/img/bodyorange.svg) no-repeat;
-		transform: rotateY(60deg) translateZ(55vw);
+		background: url(../../dist/img/bodyorange.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image3{
-		background: url(../../dist/img/bodypurple.svg) no-repeat;
-		transform: rotateY(120deg) translateZ(55vw);
+		background: url(../../dist/img/bodypurple.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 
 	.image4{
-		background: url(../../dist/img/bodyswirl.svg) no-repeat;
-		transform: rotateY(180deg) translateZ(55vw);
+		background: url(../../dist/img/bodyswirl.svg) no-repeat; //have to use background and not background-image for it to show up
 		background-size: contain;
 	}
 	
