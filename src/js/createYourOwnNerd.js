@@ -28,6 +28,7 @@ let shoesOption = 0;
 
 let changeBody = function() {
 	// hide all bodies
+	bodyOptions.style.display = 'none';
 	// show body numbered bodyOption
 
 }

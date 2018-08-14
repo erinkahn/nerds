@@ -595,34 +595,67 @@ nav{
 	img{
 		z-index: 8000;
 		transform: rotate(-13deg);
-		position: absolute;		
-		@media screen and (max-width: 465px){
+		position: absolute;	
+		@media screen and (max-width: 464px){
 			top: 80px;
-			right: 134px;
-			width: 30%;
+			right: 140px;
+			width: 27%;	
 		}
-		@media screen and (min-width: 466px){
-			right: 178px;
-			width: 29%;
-			top: 98px;
+		@media screen and (min-width: 465px){
+			top: 84px;
+			right: 166px;
+			width: 25%;
 		}
-		@media screen and (min-width: 657px){
-			right: 220px;
-			width: 22%;
+		@media screen and (min-width: 539px){
+			top: 90px;
+			right: 181px;
+			width: 25%;
+		}
+		@media screen and (min-width: 601px){
+			right: 194px;
+    		width: 26%;
+    		top: 82px;
+		}
+		@media screen and (min-width: 642px){
+			right: 229px;
+			width: 21%;
+			top: 92px;
 		}
 		@media screen and (min-width: 700px){
 			right: 250px;
 			width: 30%;
-			top: 103px;
+			top: 128px;
+		}
+		@media screen and (min-width: 834px){
+			right: 286px;
+			width: 24%;
+			top: 114px;
 		}
 		@media screen and (min-width: 911px){
-			right: 390px;
+			right: 330px;
+			width: 20%;
 		}
-		@media screen and (min-width: 1163px){
-			width: 26%;
+		@media screen and (min-width: 1041px){
+			right: 380px;
+			width: 20%;
 		}
-		@media screen and (min-width: 1223px){
-			right: 460px;
+		@media screen and (min-width: 1162px){
+			width: 22%;
+			// right: 380px;
+		}
+		@media screen and (min-width: 1202px){
+			right: 423px;
+			top: 140px;
+		}
+		@media screen and (min-width: 1320px){
+			right: 470px;
+			top: 180px;
+			width: 19%;
+		}
+		@media screen and (min-width: 1440px){
+			right: 490px;
+			top: 150px;
+			width: 20%;
 		}
 	}
 	

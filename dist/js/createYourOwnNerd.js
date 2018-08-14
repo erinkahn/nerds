@@ -29,8 +29,8 @@ var shoesOption = 0;
 
 var changeBody = function changeBody() {
 	// hide all bodies
+	bodyOptions.style.display = 'none';
 	// show body numbered bodyOption
-
 };
 
 bodyLeft.onclick = function () {
