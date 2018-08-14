@@ -63,11 +63,11 @@ nav{
   	div{
   		position: absolute;
   		width: 100%;
-  		height: 20%;
+  		height: 21%;
   		background-color: #460087;
   		border-radius: 30%;
   		transition: 0.3s;
-
+		border: 1px solid #fdfcda;
 
 	 	//2nd bar
 	 	&:nth-child(2) {
@@ -96,7 +96,7 @@ nav{
 		.ul_open &:nth-child(3) {
 			animation-name: bounce;
 			animation-duration: 0.6s;
-			transform: translateY(-13px) rotate(-135deg);
+			transform: translateY(-14px) rotate(-135deg);
 		}
   	}
 }
@@ -126,16 +126,17 @@ nav{
 		&:hover{
 			animation-name: wiggle;
 			animation-duration: 1s;
+			font-weight: bold;
 		}
 		
 
 		a{
-			color: #460087;
+			color: #f80368;
 			text-decoration: none;
 
 			&:hover{
-				color: #f80368;
-
+				color: #460087;
+				
 			}
 
 		}
@@ -242,6 +243,9 @@ nav{
 	.whimsy{
 		
 		img{
+			@media screen and (max-width: 472px){
+				margin-top: 49%;
+			}
 			position: absolute;
 			width: 13%;
 			margin-top: 34%;
@@ -868,8 +872,13 @@ nav{
 
 	img{ //fidget
 		transform: rotate(-13deg);
-		position: absolute;		
-		@media screen and (max-width: 465px){
+		position: absolute;	
+		@media screen and (max-width: 379px){	
+			top: 131px;
+			left: 0px;
+			width: 40%;
+		}	
+		@media screen and (min-width: 380px){
 			top: 180px;
 			left: -8px;
 			width: 40%;
@@ -888,6 +897,11 @@ nav{
 			left: 0px;
 			top: 300px;
 			width: 39%;
+		}
+		@media screen and (min-width: 768px){
+			left: 0px;
+			top: 332px;
+			width: 36%;
 		}
 		@media screen and (min-width: 815px){
 			left: 12px;
@@ -1131,12 +1145,13 @@ nav{
 			display: none; //hide the text
 			font-size: 13px;
 			color: #fdfcda; 
-			padding-top: 270px;
+			padding-top: 243px;
 			margin: 0 40px;
 			line-height: 2em;
 			text-align: left;
 			letter-spacing: 0.09em;
 			font-family: 'pontiac', Fallback, sans-serif;
+
 
 			//adjust the text position and margin
 			@media screen and (min-width: 433px) {
