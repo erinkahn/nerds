@@ -561,31 +561,35 @@ nav{
 			top: 23%;
 		}
 		@media screen and (min-width: 834px){
-			padding-bottom: 22%;
+			padding-bottom: 26%;
 			top: 25%;
+			border-bottom-right-radius: 57px;
+			border-bottom-left-radius: 129px;
+			border-top-left-radius: 40px;
+			width: 48%;
 		}
 		@media screen and (min-width: 933px){
-			width: 45%;
-			padding-bottom: 17%;
+			width: 48%;
+   			padding-bottom: 20%;
 			top: 29%;
 		}
 		@media screen and (min-width: 1000px){
-			width: 47%;
-			padding-bottom: 23%;
+			width: 49%;
+			padding-bottom: 26%;
 			top: 26%;
 		}
 		@media screen and (min-width: 1170px){
 			top: 29%;
 		}
 		@media screen and (min-width: 1176px){
-			padding-bottom: 18%;
+			padding-bottom: 21%;
 		}
 		@media screen and (min-width: 1224px){
-			padding-bottom: 20%;
+			padding-bottom: 23%;
 		}
 		@media screen and (min-width: 1385px){
 			top: 33%;
-			padding-bottom: 18%;
+			padding-bottom: 20%;
 		}
 		z-index: 90000;
 		position: absolute;
@@ -842,6 +846,8 @@ nav{
 			padding-bottom: 38%;
 			top: 26%;
 			max-width: 367px;
+			border-top-right-radius: 300px;
+			border-bottom-right-radius: 300px;
 		}
 		@media screen and (min-width: 1075px){
 			width: 47%;
@@ -863,6 +869,8 @@ nav{
 			padding-bottom: 27%;
 			top: 37%;
 		}
+		border-top-right-radius: 130px;
+		border-bottom-right-radius: 100px;
 		z-index: 90000;
 		position: absolute;
 		top: 24%;
@@ -1188,6 +1196,45 @@ nav{
 	//cover the white under orange layer
 	@media screen and(min-width: 1210px) {
 		margin-top: -725px;
+	}
+
+	//invisible box that opens yellow section when clicked
+	span{
+		@media screen and (max-width: 415px){
+			top: 17%;
+			padding-bottom: 38%;
+			width: 47%;	
+		}
+		@media screen and (min-width: 416px){
+			top: 23%;
+    		padding-bottom: 24%;
+    		width: 51%;
+			border-bottom-left-radius: 900px;		
+		}
+		@media screen and (min-width: 416px){
+			top: 25%;	
+		}
+		@media screen and (min-width: 678px){
+			top: 30%;
+			width: 59%;	
+		}
+		@media screen and (min-width: 800px){
+			top: 33%;
+			width: 62%;
+			padding-bottom: 17%;
+		}
+		@media screen and (min-width: 1000px){
+			top: 38%;
+			width: 65%;
+		}
+		@media screen and (min-width: 1224px){
+			width: 57%;
+		}
+		border-top-left-radius: 900px;
+		z-index: 90003;
+		position: absolute;
+		right: 0;
+		background-color: transparent;	
 	}
 
 	

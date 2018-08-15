@@ -44,6 +44,8 @@ var toggleCharacters = function() {
 document.querySelector('.character1 img').addEventListener('click', toggleCharacters);
 document.querySelector('.character1 span').addEventListener('click', toggleCharacters);
 document.querySelector('.character2 span').addEventListener('click', toggleCharacters);
+document.querySelector('.character3 img').addEventListener('click', toggleCharacters);
+document.querySelector('.character3 span').addEventListener('click', toggleCharacters);
 document.querySelector(".character1").addEventListener("click", toggleCharacters);
 document.querySelector(".character2").addEventListener("click", toggleCharacters);
 document.querySelector(".character3").addEventListener("click", toggleCharacters);
