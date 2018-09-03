@@ -1365,7 +1365,7 @@ nav{
 	background-repeat: no-repeat;
 	background-size: 100%; 
 	background-position: 0 40px;
-	padding: 10px 0;
+	padding: 60px 0;
 }
 
 
@@ -1521,14 +1521,18 @@ nav{
 	// heading
 	.lets-play{
 		width: 100%;
-		background: url(../../dist/img/8copy.svg);
-		background-repeat: no-repeat;
-		z-index: 2;
-		background-size: 100%; 
+		background-color: #3d074b;;
 
 		h2{
+			color: #fdfcda;
+			font-weight: 100;
 			@media screen and (max-width: 500px){
-				font-size: 1.5em;
+				font-size: 1.3em;
+			}
+			padding-bottom: 30px;
+			margin-top: 0px;
+			@media screen and (min-width: 769px){
+				margin-top: 30px;
 			}
 		}
 		
@@ -1769,15 +1773,33 @@ nav{
 .arrows{
 	position: relative;
 	display: flex;
-	align-items: center;
 	top: 263px;
+	align-items: center;
 	z-index: 800;
 	padding-bottom: 44%;
+	@media screen and (max-width: 400px){
+		top: 203px;
+	}
+	@media screen and (min-width: 490px){
+		top: 313px;
+	}
+	@media screen and (min-width: 600px){
+		top: 383px;
+	}
+	@media screen and (min-width: 700px){
+		top: 453px;
+	}
 	@media screen and (min-width: 768px){
 		top: 302px;
 	}
+	@media screen and (min-width: 948px){
+		top: 369px;
+	}
 	@media screen and (min-width: 1024px){
 		top: 329px;
+	}
+	@media screen and (min-width: 1100px){
+		top: 393px;
 	}
 	@media screen and (min-width: 1224px){
 		top: 357px;
@@ -1804,6 +1826,7 @@ nav{
 		&:hover{
 			transition: .3s ease-in-out;
 			filter: sepia(80%);
+			cursor: pointer;
 			
 		}
 		//body previous
