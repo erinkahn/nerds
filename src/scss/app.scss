@@ -411,34 +411,66 @@ nav{
 
 
 .video-section{
-	margin-top: -140px;
+	margin-top: -208px;
 	position: relative;
 	padding-bottom: 35px;
 
-	//tablet
 	@media screen and (min-width: 522px) {
-		margin-top: -1400px;
+		margin-top: -1480px;
+	}
+	@media screen and (min-width: 732px){
+		margin-top: -1420px;
+	}
+	@media screen and (min-width: 883px){
+		margin-top: -1380px;
+	}
+	@media screen and (min-width: 941px){
+		margin-top: -1330px;
+	}
+	@media screen and (min-width: 1014px){
+		margin-top: -1266px;
+	}
+	@media screen and (min-width: 1224px){
+		margin-top: -1236px;
+	}
+	@media screen and (min-width: 1312px){
+		margin-top: -1200px;
+	}
+	@media screen and (min-width: 1343px){
+		margin-top: -1170px;
+	}
+	@media screen and (min-width: 1400px){
+		margin-top: -1120px;
 	}
 
-	//desktop
-	@media screen and (min-width: 1035px){
-		margin-top: -1340px;
-	}
-	@media screen and (min-width: 1150px){
-		margin-top: -1286px;
-	}
-	@media screen and (min-width: 1280px){
-		margin-top: -1280px;
-	}
-	@media screen and (min-width: 1330px){
-		margin-top: -1201px;
-	}
+
+
 
 	.video{
+		border: 4px solid #fdfcda;
+		border-radius: 30px;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
+		margin: 0 auto;
+		width: auto;
+		height: 171px;
+		@media screen and (min-width: 450px){
+			height: 210px;
+		}
+		@media screen and (min-width: 676px){
+			height: 243px;
+		}
+		@media screen and (min-width: 813px){
+			height: 290px;
+		}
+		@media screen and (min-width: 1054px){
+			height: 390px;
+		}
+		@media screen and (min-width: 1224px){
+			height: 414px;
+		}
 
 		p{
 			white-space: nowrap;
@@ -477,33 +509,10 @@ nav{
 			}
 
 		}
-
-		img{
-			z-index: 3;
-			display: flex;
-			align-self: center;
-			height: 275px;
-			width: 310px;
-
-			//tablet
-			@media screen and (min-width: 527px){
-				height: 380px;
-				width: 449px;
-			}
-
-			//desktop
-			@media screen and (min-width: 768px){
-				height: 390px;
-				width: 550px;
-			}
-
-			@media screen and (min-width: 1224px){
-				height: 440px;
-				width: 700px;
-			}
-		}
 	}
 }
+
+
 
 
 //-------section2 self esteem---------------------------------------
@@ -1518,10 +1527,10 @@ nav{
 	display: flex;
 	flex-direction: column;
 	
-	// heading
+	// create own nerd
 	.lets-play{
 		width: 100%;
-		background-color: #3d074b;;
+		background-color: #672256;
 
 		h2{
 			color: #fdfcda;

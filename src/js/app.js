@@ -76,10 +76,16 @@ ropeAnimation.addEventListener("click", function(){
 });
 
 				
+//-----------------------------------------------------------------
 
+//video play button controls
+let video = document.querySelector(".video");
+video.controls = false;
 
+video.addEventListener('mouseover', function() {
+	video.controls = true;
 
-
+})
 
 
 
