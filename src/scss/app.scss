@@ -411,7 +411,7 @@ nav{
 
 
 .video-section{
-	margin-top: -208px;
+	margin-top: -190px;
 	position: relative;
 	padding-bottom: 35px;
 
@@ -447,8 +447,8 @@ nav{
 
 
 	.video{
-		border: 4px solid #fdfcda;
-		border-radius: 30px;
+		border: 4px solid #672256;
+		border-radius: 20px;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -456,6 +456,7 @@ nav{
 		margin: 0 auto;
 		width: auto;
 		height: 171px;
+		cursor: pointer;
 		@media screen and (min-width: 450px){
 			height: 210px;
 		}
@@ -687,7 +688,7 @@ nav{
 			color: #fdfcda;
 			padding-top: 213px;
 			margin: 0 55px;
-			line-height: 2.3em;
+			line-height: 2em;
 			text-align: left;
 			letter-spacing: 0.09em;
 			font-family: 'pontiac', Fallback, sans-serif;
@@ -703,7 +704,6 @@ nav{
 				padding-top: 230px;
 				margin: 0 299px 0 65px;
 				font-size: 16px;
-				line-height: 2.2em;
 			}
 			//push down the pink layer text and add margin
 			@media screen and (min-width: 682px) {
@@ -715,14 +715,12 @@ nav{
 				padding-top: 340px;
 				margin: 0 400px 0 65px;
 				font-size: 17px;
-				line-height: 2.5em;
 			}
 			//push down the pink layer text and add margin
 			@media screen and (min-width: 834px) {
 				padding-top: 350px;
 				margin: 0 400px 0 65px;
 				font-size: 18px;
-				line-height: 2.5em;
 			}
 			//push down the pink layer text and add margin
 			@media screen and (min-width: 911px) {
@@ -744,7 +742,7 @@ nav{
 	}
 
 	&.show{
-		margin-bottom: 300px;
+		margin-bottom: 208px;
 
 		div p{
 			display: flex;
@@ -1023,7 +1021,7 @@ nav{
 			color: #fdfcda;
 			padding-top: 240px;
 			margin: 0 30px;
-			line-height: 2.3em;
+			line-height: 2em;
 			text-align: left;
 			letter-spacing: 0.09em;
 			font-family: 'pontiac', Fallback, sans-serif;
@@ -1130,7 +1128,7 @@ nav{
 	}
 
 	&.show{
-		margin-bottom: 300px;
+		margin-bottom: 208px;
 
 		div p{
 			display: flex;
@@ -1304,7 +1302,6 @@ nav{
 				padding-top: 388px;
 				margin: 0 100px;
 				font-size: 16px;
-				line-height: 2.3em;
 			}
 
 			//adjust the text position and margin
@@ -1319,13 +1316,11 @@ nav{
 				padding-top: 454px;
 				margin: 0 180px;
 				font-size: 20px;
-				line-height: 2.3em;
 			}
 
 			@media screen and (min-width: 1178px) {
 				padding-top: 524px;
 				margin: 0 230px;
-				line-height: 2.2em;
 			}
 
 			//adjust the text position and margin
@@ -1505,8 +1500,11 @@ nav{
 			letter-spacing: 0.08em;
 			transition: .2s ease-in-out;
 
-			//desktop
+			//tablet
 			@media screen and (min-width: 768px) {
+				margin: auto 13px;
+			}
+			@media screen and (min-width: 1024px) {
 				margin: auto 25px;
 			}
 		}

@@ -78,14 +78,24 @@ ropeAnimation.addEventListener("click", function(){
 				
 //-----------------------------------------------------------------
 
-//video play button controls
+//video play and pause
 let video = document.querySelector(".video");
-video.controls = false;
+let play = false;
 
-video.addEventListener('mouseover', function() {
-	video.controls = true;
 
-})
+video.addEventListener('click', function(){
+	if (video.paused){
+		video.play();
+		console.log('video is playing')
+	} else {
+		video.pause();
+		console.log('video is paused')
+	}
+
+});
+            
+		
+
 
 
 
